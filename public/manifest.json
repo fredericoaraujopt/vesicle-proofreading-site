@@ -2113,7 +2113,7 @@
       "y_start": 16521,
       "z_crop": 655,
       "gt_points": [],
-      "note": "Some tiles are biological tissue with NO vesicles, like this one. When that happens, click 'No vesicles here' and submit \u2014 don't invent vesicles."
+      "note": "Some tiles are biological tissue with NO vesicles, like this one. When that happens, click 'No vesicles here' and submit."
     }
   ]
 }
