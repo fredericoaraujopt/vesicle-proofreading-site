@@ -33,7 +33,10 @@
       <li><b>Mitochondria, ER and membranes are NOT vesicles</b> — they are bigger and irregular. Don't click them.</li>
       <li>Press <b>Snap back</b> (or <kbd>0</kbd>) any time to return to the default view.</li>
     </ol>
-    <h3>Worked examples (green = real vesicles)</h3>
+    <h3>Worked examples — from the ground truth (green rings = real vesicles)</h3>
+    <p class="muted small">Toggle the markers off to see the raw EM, then back on to learn exactly what counts.
+       Marker size ≈ a real vesicle.</p>
+    <button id="toggle-example-ves" class="ghost">👁 Hide vesicles (see raw EM)</button>
     <div id="examples-grid" class="examples-grid"></div>
     <button id="tutorial-close">Got it — let's go</button>
   </div>
@@ -69,14 +72,18 @@
         </div>
         <div class="group">
           <span id="count-label" class="count">0 vesicles</span>
+          <button id="toggle-ves" class="ghost" title="Show/hide vesicle markers (h)">👁 Hide vesicles</button>
           <button id="clear" class="ghost" title="Remove all my clicks">Clear</button>
         </div>
         <div class="group grow">
+          <button id="skip-btn" class="ghost" title="Skip this tile without saving">Skip ▶</button>
           <button id="empty-btn" class="warn" title="No vesicles in this tile">No vesicles here</button>
-          <button id="submit-btn" class="primary" title="Submit and go to next (Enter)">Submit &amp; next →</button>
+          <button id="submit-btn" class="primary" title="Save annotation and load the next tile (Enter)">Submit &amp; next →</button>
         </div>
       </div>
-      <p class="hint">Left-click adds a vesicle; click a dot again to remove. Drag to pan. Scroll to zoom.</p>
+      <p id="savemsg" class="savemsg hidden"></p>
+      <p class="hint">Left-click adds a vesicle (markers scale with zoom ≈ true vesicle size); click a dot again to remove.
+        Drag to pan, scroll to zoom, <kbd>h</kbd> show/hide vesicles. <b>Submit &amp; next</b> (or <kbd>Enter</kbd>) saves and advances to the next tile.</p>
     </section>
 
     <aside id="sidebar">

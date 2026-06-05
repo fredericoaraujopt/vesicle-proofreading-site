@@ -58,6 +58,9 @@ main { display: grid; grid-template-columns: 1fr 320px; gap: 16px; padding: 16px
 .zlabel, .count { min-width: 64px; text-align: center; font-variant-numeric: tabular-nums; }
 .count { color: var(--good); font-weight: 600; }
 .hint { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.savemsg { margin: 8px auto 0; padding: 8px 12px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  color: #ffd9d9; background: #45161b; border: 1px solid #7d2630; max-width: 760px; }
+button.ghost.active { border-color: var(--accent); color: var(--accent); }
 
 aside .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
 aside h3 { margin: 0 0 10px; font-size: 14px; }

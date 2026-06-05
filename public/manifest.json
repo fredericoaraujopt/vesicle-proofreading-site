@@ -1012,14 +1012,6 @@
       "z_crop": 5210
     },
     {
-      "tile_id": "tile_0125",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 30789,
-      "y_start": 25484,
-      "z_crop": 4656
-    },
-    {
       "tile_id": "tile_0126",
       "category": "dense_neuropil",
       "kind": "fresh",
@@ -1340,6 +1332,14 @@
       "z_crop": 5232
     },
     {
+      "tile_id": "tile_0167",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 102467,
+      "y_start": 43986,
+      "z_crop": 5107
+    },
+    {
       "tile_id": "tile_0168",
       "category": "dense_neuropil",
       "kind": "fresh",
@@ -1508,6 +1508,14 @@
       "z_crop": 4352
     },
     {
+      "tile_id": "tile_0189",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 63470,
+      "y_start": 31482,
+      "z_crop": 6064
+    },
+    {
       "tile_id": "tile_0190",
       "category": "dense_neuropil",
       "kind": "fresh",
@@ -1538,14 +1546,6 @@
       "x_start": 36927,
       "y_start": 17057,
       "z_crop": 4354
-    },
-    {
-      "tile_id": "tile_0194",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 35183,
-      "y_start": 41305,
-      "z_crop": 6496
     },
     {
       "tile_id": "tile_0195",
@@ -1910,17 +1910,117 @@
   ],
   "examples": [
     {
-      "tile_id": "tile_0189",
-      "x_start": 63470,
-      "y_start": 31482,
-      "z_crop": 6064,
+      "tile_id": "tile_0125",
+      "x_start": 30789,
+      "y_start": 25484,
+      "z_crop": 4656,
       "gt_points": [
         {
-          "x_local": 53,
-          "y_local": 193
+          "x_local": 194,
+          "y_local": 54
+        },
+        {
+          "x_local": 203,
+          "y_local": 55
+        },
+        {
+          "x_local": 96,
+          "y_local": 145
+        },
+        {
+          "x_local": 90,
+          "y_local": 154
+        },
+        {
+          "x_local": 18,
+          "y_local": 158
+        },
+        {
+          "x_local": 122,
+          "y_local": 161
+        },
+        {
+          "x_local": 25,
+          "y_local": 65
+        },
+        {
+          "x_local": 195,
+          "y_local": 35
+        },
+        {
+          "x_local": 201,
+          "y_local": 35
+        },
+        {
+          "x_local": 221,
+          "y_local": 146
+        },
+        {
+          "x_local": 208,
+          "y_local": 149
+        },
+        {
+          "x_local": 84,
+          "y_local": 176
+        },
+        {
+          "x_local": 84,
+          "y_local": 162
+        },
+        {
+          "x_local": 40,
+          "y_local": 229
+        },
+        {
+          "x_local": 55,
+          "y_local": 204
+        },
+        {
+          "x_local": 58,
+          "y_local": 198
+        },
+        {
+          "x_local": 205,
+          "y_local": 11
+        },
+        {
+          "x_local": 120,
+          "y_local": 104
+        },
+        {
+          "x_local": 123,
+          "y_local": 98
+        },
+        {
+          "x_local": 123,
+          "y_local": 91
+        },
+        {
+          "x_local": 128,
+          "y_local": 93
+        },
+        {
+          "x_local": 144,
+          "y_local": 88
+        },
+        {
+          "x_local": 147,
+          "y_local": 183
+        },
+        {
+          "x_local": 244,
+          "y_local": 156
+        },
+        {
+          "x_local": 79,
+          "y_local": 67
+        },
+        {
+          "x_local": 96,
+          "y_local": 152
         }
       ],
-      "note": "Sparse tile - only a few clear vesicles (dark ring, light lumen). Don't over-click."
+      "note": "Each green ring marks one synaptic vesicle: a small round profile, dark membrane rim, lighter centre. Toggle markers off to see them in the raw EM."
     },
     {
       "tile_id": "tile_0139",
@@ -2065,484 +2165,184 @@
           "y_local": 136
         }
       ],
-      "note": "Typical tile - click the centre of each round vesicle. Use Z +/- to confirm faint ones."
+      "note": "Vesicles cluster near synapses. Mitochondria and ER are larger and irregular \u2014 they are NOT vesicles, so they carry no ring."
     },
     {
-      "tile_id": "tile_0167",
-      "x_start": 102467,
-      "y_start": 43986,
-      "z_crop": 5107,
+      "tile_id": "tile_0194",
+      "x_start": 35183,
+      "y_start": 41305,
+      "z_crop": 6496,
       "gt_points": [
         {
-          "x_local": 207,
-          "y_local": 11
-        },
-        {
-          "x_local": 187,
-          "y_local": 14
-        },
-        {
-          "x_local": 134,
-          "y_local": 14
-        },
-        {
-          "x_local": 162,
-          "y_local": 15
-        },
-        {
-          "x_local": 215,
-          "y_local": 17
-        },
-        {
-          "x_local": 229,
-          "y_local": 17
-        },
-        {
-          "x_local": 223,
-          "y_local": 26
-        },
-        {
-          "x_local": 206,
-          "y_local": 31
-        },
-        {
-          "x_local": 200,
-          "y_local": 33
-        },
-        {
-          "x_local": 218,
-          "y_local": 37
-        },
-        {
-          "x_local": 239,
-          "y_local": 42
-        },
-        {
-          "x_local": 243,
-          "y_local": 50
-        },
-        {
-          "x_local": 78,
-          "y_local": 62
-        },
-        {
-          "x_local": 97,
-          "y_local": 65
-        },
-        {
-          "x_local": 83,
-          "y_local": 67
-        },
-        {
-          "x_local": 102,
-          "y_local": 74
-        },
-        {
-          "x_local": 90,
-          "y_local": 75
-        },
-        {
-          "x_local": 132,
-          "y_local": 76
-        },
-        {
-          "x_local": 40,
-          "y_local": 97
-        },
-        {
-          "x_local": 96,
-          "y_local": 97
-        },
-        {
           "x_local": 114,
-          "y_local": 102
-        },
-        {
-          "x_local": 79,
-          "y_local": 105
-        },
-        {
-          "x_local": 71,
-          "y_local": 107
-        },
-        {
-          "x_local": 86,
-          "y_local": 107
-        },
-        {
-          "x_local": 114,
-          "y_local": 112
-        },
-        {
-          "x_local": 30,
-          "y_local": 116
-        },
-        {
-          "x_local": 50,
-          "y_local": 118
-        },
-        {
-          "x_local": 114,
-          "y_local": 119
-        },
-        {
-          "x_local": 98,
-          "y_local": 122
-        },
-        {
-          "x_local": 26,
-          "y_local": 124
-        },
-        {
-          "x_local": 54,
-          "y_local": 125
-        },
-        {
-          "x_local": 69,
-          "y_local": 128
-        },
-        {
-          "x_local": 43,
-          "y_local": 129
-        },
-        {
-          "x_local": 117,
-          "y_local": 130
-        },
-        {
-          "x_local": 126,
-          "y_local": 133
-        },
-        {
-          "x_local": 50,
-          "y_local": 134
-        },
-        {
-          "x_local": 86,
-          "y_local": 132
-        },
-        {
-          "x_local": 24,
-          "y_local": 136
-        },
-        {
-          "x_local": 111,
-          "y_local": 142
-        },
-        {
-          "x_local": 58,
-          "y_local": 140
-        },
-        {
-          "x_local": 123,
-          "y_local": 140
-        },
-        {
-          "x_local": 46,
-          "y_local": 144
-        },
-        {
-          "x_local": 64,
-          "y_local": 145
-        },
-        {
-          "x_local": 78,
-          "y_local": 148
-        },
-        {
-          "x_local": 102,
-          "y_local": 151
-        },
-        {
-          "x_local": 53,
-          "y_local": 153
-        },
-        {
-          "x_local": 86,
-          "y_local": 152
-        },
-        {
-          "x_local": 9,
-          "y_local": 156
-        },
-        {
-          "x_local": 232,
-          "y_local": 158
-        },
-        {
-          "x_local": 79,
-          "y_local": 158
-        },
-        {
-          "x_local": 101,
-          "y_local": 158
-        },
-        {
-          "x_local": 126,
-          "y_local": 163
-        },
-        {
-          "x_local": 114,
-          "y_local": 164
-        },
-        {
-          "x_local": 105,
-          "y_local": 166
-        },
-        {
-          "x_local": 253,
-          "y_local": 168
-        },
-        {
-          "x_local": 53,
-          "y_local": 169
-        },
-        {
-          "x_local": 62,
-          "y_local": 168
-        },
-        {
-          "x_local": 222,
-          "y_local": 172
-        },
-        {
-          "x_local": 38,
-          "y_local": 173
-        },
-        {
-          "x_local": 9,
-          "y_local": 175
-        },
-        {
-          "x_local": 18,
-          "y_local": 177
-        },
-        {
-          "x_local": 94,
-          "y_local": 180
-        },
-        {
-          "x_local": 250,
-          "y_local": 179
-        },
-        {
-          "x_local": 79,
-          "y_local": 182
-        },
-        {
-          "x_local": 86,
-          "y_local": 185
-        },
-        {
-          "x_local": 40,
-          "y_local": 190
-        },
-        {
-          "x_local": 83,
-          "y_local": 192
-        },
-        {
-          "x_local": 9,
-          "y_local": 194
-        },
-        {
-          "x_local": 65,
-          "y_local": 194
-        },
-        {
-          "x_local": 134,
-          "y_local": 197
-        },
-        {
-          "x_local": 61,
-          "y_local": 202
-        },
-        {
-          "x_local": 222,
-          "y_local": 204
-        },
-        {
-          "x_local": 26,
-          "y_local": 208
-        },
-        {
-          "x_local": 58,
-          "y_local": 208
-        },
-        {
-          "x_local": 106,
-          "y_local": 217
-        },
-        {
-          "x_local": 127,
-          "y_local": 219
-        },
-        {
-          "x_local": 100,
-          "y_local": 225
-        },
-        {
-          "x_local": 111,
-          "y_local": 228
-        },
-        {
-          "x_local": 250,
-          "y_local": 233
-        },
-        {
-          "x_local": 107,
-          "y_local": 252
-        },
-        {
-          "x_local": 50,
-          "y_local": 245
-        },
-        {
-          "x_local": 125,
-          "y_local": 246
-        },
-        {
-          "x_local": 119,
-          "y_local": 252
-        },
-        {
-          "x_local": 124,
-          "y_local": 12
-        },
-        {
-          "x_local": 125,
-          "y_local": 4
-        },
-        {
-          "x_local": 133,
-          "y_local": 5
-        },
-        {
-          "x_local": 115,
-          "y_local": 7
-        },
-        {
-          "x_local": 191,
-          "y_local": 24
-        },
-        {
-          "x_local": 201,
-          "y_local": 24
-        },
-        {
-          "x_local": 196,
-          "y_local": 11
-        },
-        {
-          "x_local": 241,
-          "y_local": 55
-        },
-        {
-          "x_local": 232,
-          "y_local": 48
-        },
-        {
-          "x_local": 241,
-          "y_local": 63
-        },
-        {
-          "x_local": 103,
-          "y_local": 43
-        },
-        {
-          "x_local": 99,
-          "y_local": 40
-        },
-        {
-          "x_local": 94,
-          "y_local": 71
-        },
-        {
-          "x_local": 87,
-          "y_local": 60
-        },
-        {
-          "x_local": 79,
-          "y_local": 73
-        },
-        {
-          "x_local": 73,
-          "y_local": 68
-        },
-        {
-          "x_local": 64,
-          "y_local": 86
-        },
-        {
-          "x_local": 37,
-          "y_local": 108
-        },
-        {
-          "x_local": 39,
-          "y_local": 115
-        },
-        {
-          "x_local": 107,
-          "y_local": 107
-        },
-        {
-          "x_local": 104,
-          "y_local": 127
-        },
-        {
-          "x_local": 93,
-          "y_local": 142
-        },
-        {
-          "x_local": 78,
-          "y_local": 129
-        },
-        {
-          "x_local": 70,
-          "y_local": 84
-        },
-        {
-          "x_local": 49,
-          "y_local": 108
-        },
-        {
-          "x_local": 18,
           "y_local": 146
         },
         {
-          "x_local": 108,
+          "x_local": 137,
+          "y_local": 91
+        },
+        {
+          "x_local": 142,
+          "y_local": 94
+        },
+        {
+          "x_local": 34,
+          "y_local": 35
+        },
+        {
+          "x_local": 7,
+          "y_local": 119
+        },
+        {
+          "x_local": 129,
+          "y_local": 32
+        },
+        {
+          "x_local": 85,
+          "y_local": 25
+        },
+        {
+          "x_local": 196,
+          "y_local": 140
+        },
+        {
+          "x_local": 209,
+          "y_local": 143
+        },
+        {
+          "x_local": 205,
+          "y_local": 152
+        },
+        {
+          "x_local": 195,
+          "y_local": 152
+        },
+        {
+          "x_local": 47,
+          "y_local": 224
+        },
+        {
+          "x_local": 31,
+          "y_local": 203
+        },
+        {
+          "x_local": 26,
+          "y_local": 194
+        },
+        {
+          "x_local": 30,
+          "y_local": 189
+        },
+        {
+          "x_local": 37,
+          "y_local": 190
+        },
+        {
+          "x_local": 95,
+          "y_local": 62
+        },
+        {
+          "x_local": 100,
+          "y_local": 64
+        },
+        {
+          "x_local": 130,
+          "y_local": 76
+        },
+        {
+          "x_local": 176,
+          "y_local": 12
+        },
+        {
+          "x_local": 180,
+          "y_local": 21
+        },
+        {
+          "x_local": 12,
+          "y_local": 25
+        },
+        {
+          "x_local": 7,
+          "y_local": 25
+        },
+        {
+          "x_local": 9,
+          "y_local": 20
+        },
+        {
+          "x_local": 9,
+          "y_local": 34
+        },
+        {
+          "x_local": 111,
+          "y_local": 162
+        },
+        {
+          "x_local": 114,
+          "y_local": 154
+        },
+        {
+          "x_local": 121,
           "y_local": 153
         },
         {
-          "x_local": 133,
-          "y_local": 178
+          "x_local": 126,
+          "y_local": 142
         },
         {
-          "x_local": 88,
-          "y_local": 202
+          "x_local": 105,
+          "y_local": 164
         },
         {
-          "x_local": 69,
-          "y_local": 233
+          "x_local": 2,
+          "y_local": 47
         },
         {
-          "x_local": 118,
-          "y_local": 207
+          "x_local": 158,
+          "y_local": 37
         },
         {
-          "x_local": 102,
-          "y_local": 239
+          "x_local": 170,
+          "y_local": 5
         },
         {
-          "x_local": 102,
-          "y_local": 244
+          "x_local": 204,
+          "y_local": 129
         },
         {
-          "x_local": 42,
-          "y_local": 183
+          "x_local": 187,
+          "y_local": 137
+        },
+        {
+          "x_local": 204,
+          "y_local": 118
+        },
+        {
+          "x_local": 236,
+          "y_local": 66
+        },
+        {
+          "x_local": 240,
+          "y_local": 66
+        },
+        {
+          "x_local": 65,
+          "y_local": 83
+        },
+        {
+          "x_local": 110,
+          "y_local": 106
+        },
+        {
+          "x_local": 129,
+          "y_local": 115
+        },
+        {
+          "x_local": 113,
+          "y_local": 66
         }
       ],
-      "note": "Dense bouton - many packed vesicles. Mitochondria/ER are larger and irregular: do NOT click them."
+      "note": "Use Z +/- on the real tiles to confirm faint vesicles across sections. Click the centre of each one."
     }
   ]
 }

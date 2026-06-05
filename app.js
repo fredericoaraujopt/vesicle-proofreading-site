@@ -10,12 +10,17 @@
 (function () {
   "use strict";
   const PUBLIC = "public/";
-  const POINT_R = 6;            // hit radius (image px) for toggle-remove
+  // A vesicle is ~3 px radius at MIP1 8 nm (matches the radius-3 disk used in training).
+  // Markers are drawn at this IMAGE-space radius * view.scale, so they track magnification
+  // and show the true vesicle size (mirrors vesicle_gui.get_annotation_radius_display).
+  const VESICLE_R_IMG = 3;
+  const HIT_R_IMG = 5;          // toggle-remove tolerance in IMAGE px (zoom-independent)
   const $ = id => document.getElementById(id);
 
   let META = null, TILES = [], EXAMPLES = [];
   let username = null, order = [], doneSet = new Set(), idx = 0;
   let tile = null, images = [], zi = 0, points = [];
+  let showVesicles = true;      // viewport vesicle markers on/off (#hide-show toggle)
   let view = { cx: 0, cy: 0, scale: 1 };
   let startedAt = 0, viewportEvents = 0;
   let session = { tiles: 0, vesicles: 0, secs: 0 };
@@ -116,26 +121,28 @@
     const [bx0, by0] = img2scr(META.center_offset, META.center_offset);
     const [bx1, by1] = img2scr(META.center_offset + META.tile_size, META.center_offset + META.tile_size);
     ctx.save();
-    ctx.fillStyle = "rgba(6,9,14,0.5)";
-    // four bands outside the box
+    // Subtle dim of the context outside the annotation tile (kept light so the
+    // surrounding EM is still easy to examine); the bright frame is the main cue.
+    ctx.fillStyle = "rgba(8,11,16,0.18)";
     ctx.fillRect(0, 0, canvas.width, Math.max(0, by0));
     ctx.fillRect(0, by1, canvas.width, canvas.height - by1);
     ctx.fillRect(0, by0, Math.max(0, bx0), by1 - by0);
     ctx.fillRect(bx1, by0, canvas.width - bx1, by1 - by0);
     ctx.strokeStyle = getCSS("--frame"); ctx.lineWidth = 2;
+    ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 3;
     ctx.strokeRect(bx0, by0, bx1 - bx0, by1 - by0);
     ctx.restore();
     drawPoints();
   }
   function drawPoints() {
+    if (!showVesicles) return;
     const onCentre = zi === META.center_index;
-    ctx.lineWidth = 2;
+    const r = Math.max(1.5, VESICLE_R_IMG * view.scale);   // scales with magnification ~ vesicle size
+    ctx.lineWidth = Math.max(1, r * 0.3);
+    ctx.strokeStyle = onCentre ? getCSS("--vesicle") : "rgba(255,77,109,0.4)";
     for (const p of points) {
       const [sx, sy] = img2scr(META.center_offset + p.x_local, META.center_offset + p.y_local);
-      ctx.beginPath(); ctx.arc(sx, sy, POINT_R, 0, 7);
-      ctx.strokeStyle = onCentre ? getCSS("--vesicle") : "rgba(255,77,109,0.4)";
-      ctx.stroke();
-      ctx.beginPath(); ctx.arc(sx, sy, 1.5, 0, 7); ctx.fillStyle = ctx.strokeStyle; ctx.fill();
+      ctx.beginPath(); ctx.arc(sx, sy, r, 0, 7); ctx.stroke();
     }
   }
   function getCSS(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
@@ -160,8 +167,20 @@
     $("zoom-out").onclick = () => zoomCentre(1 / 1.3);
     $("snap").onclick = snapBack;
     $("clear").onclick = () => { points = []; updateCount(); draw(); };
+    $("toggle-ves").onclick = toggleVesicles;
+    $("skip-btn").onclick = skipTile;
     $("empty-btn").onclick = () => submit(true);
     $("submit-btn").onclick = () => submit(false);
+  }
+
+  function toggleVesicles() {
+    showVesicles = !showVesicles;
+    $("toggle-ves").textContent = showVesicles ? "👁 Hide vesicles" : "👁 Show vesicles";
+    draw();
+  }
+  function skipTile() {                     // advance WITHOUT recording (for tiles you can't judge)
+    if (!tile) return;
+    idx += 1; loadTile();
   }
 
   function handleClick(e) {
@@ -170,8 +189,8 @@
     const xl = ix - META.center_offset, yl = iy - META.center_offset;
     if (xl < 0 || yl < 0 || xl >= META.tile_size || yl >= META.tile_size)
       return nudge("Click inside the framed tile.");
-    // toggle: remove if near an existing point, else add
-    let best = -1, bd = POINT_R * POINT_R;
+    // toggle: remove if near an existing point, else add (tolerance in IMAGE px)
+    let best = -1, bd = HIT_R_IMG * HIT_R_IMG;
     points.forEach((p, i) => { const d = (p.x_local - xl) ** 2 + (p.y_local - yl) ** 2; if (d <= bd) { bd = d; best = i; } });
     if (best >= 0) points.splice(best, 1);
     else points.push({ x_local: Math.round(xl), y_local: Math.round(yl) });
@@ -193,8 +212,7 @@
   }
   function snapBack() { defaultView(); zi = META.center_index; viewportEvents++; updateBanner(); draw(); }
   function clampView() {
-    const half = META.frame_px / 2;
-    view.cx = clamp(view.cx, half - 0, META.frame_px - 0); // soft clamp to frame
+    // Allow panning across the whole rendered frame in BOTH directions.
     view.cx = clamp(view.cx, 0, META.frame_px);
     view.cy = clamp(view.cy, 0, META.frame_px);
   }
@@ -210,6 +228,7 @@
         case "+": case "=": zoomCentre(1.3); break;
         case "-": case "_": zoomCentre(1 / 1.3); break;
         case "0": snapBack(); break;
+        case "h": case "H": toggleVesicles(); break;
         case "Enter": submit(false); break;
         case "e": case "E": submit(true); break;
       }
@@ -236,6 +255,8 @@
     const n = $("nudge"); n.textContent = msg; n.classList.remove("hidden");
     clearTimeout(nudgeTimer); nudgeTimer = setTimeout(() => n.classList.add("hidden"), 1400);
   }
+  function showSaveError(msg) { const e = $("savemsg"); e.textContent = "⚠ " + msg; e.classList.remove("hidden"); }
+  function clearSaveError() { $("savemsg").classList.add("hidden"); }
 
   async function refreshLeaderboard() {
     let rows = [];
@@ -266,7 +287,15 @@
     };
     $("submit-btn").disabled = true;
     try { await window.AM_DB.insertSubmission(row); }
-    catch (err) { nudge("Save failed — will retry."); console.error(err); $("submit-btn").disabled = false; return; }
+    catch (err) {
+      console.error(err);
+      const msg = String(err);
+      showSaveError(/row-level security|42501/i.test(msg)
+        ? "Save blocked by the database (row-level-security). The Supabase anon-insert policy isn't enabled — see setup. Your clicks are kept; try Submit again once it's fixed."
+        : "Save failed: " + msg + " — your clicks are kept, try Submit again.");
+      $("submit-btn").disabled = false; return;     // do NOT advance, so no work is lost
+    }
+    clearSaveError();
     $("submit-btn").disabled = false;
     doneSet.add(tile.tile_id);
     session.tiles += 1; session.vesicles += row.n_points; session.secs += row.duration_s;
@@ -275,8 +304,20 @@
   }
 
   // ───────────────────────── examples (tutorial) ─────────────────────────
+  let exampleShowVes = true;
+  const exampleRecs = [];
+  function drawExample(rec) {
+    const cc = rec.c.getContext("2d");
+    cc.clearRect(0, 0, rec.c.width, rec.c.height);
+    cc.drawImage(rec.im, META.center_offset, META.center_offset, META.tile_size, META.tile_size,
+                 0, 0, META.tile_size, META.tile_size);
+    if (exampleShowVes) {
+      cc.strokeStyle = "#3fb950"; cc.lineWidth = 1.2;
+      rec.pts.forEach(p => { cc.beginPath(); cc.arc(p.x_local, p.y_local, VESICLE_R_IMG, 0, 7); cc.stroke(); });
+    }
+  }
   function renderExamples() {
-    const grid = $("examples-grid"); grid.innerHTML = "";
+    const grid = $("examples-grid"); grid.innerHTML = ""; exampleRecs.length = 0;
     EXAMPLES.forEach(ex => {
       const fig = document.createElement("figure");
       const c = document.createElement("canvas"); c.width = c.height = META.tile_size;
@@ -284,14 +325,15 @@
       const cap = document.createElement("figcaption"); cap.textContent = ex.note || "";
       fig.appendChild(cap); grid.appendChild(fig);
       const im = new Image();
-      im.onload = () => {
-        const cc = c.getContext("2d");
-        cc.drawImage(im, META.center_offset, META.center_offset, META.tile_size, META.tile_size, 0, 0, META.tile_size, META.tile_size);
-        cc.strokeStyle = "#3fb950"; cc.lineWidth = 1.5;
-        (ex.gt_points || []).forEach(p => { cc.beginPath(); cc.arc(p.x_local, p.y_local, 5, 0, 7); cc.stroke(); });
-      };
+      im.onload = () => { const rec = { c, im, pts: ex.gt_points || [] }; exampleRecs.push(rec); drawExample(rec); };
       im.src = PUBLIC + META.image_template.replace("{tile_id}", ex.tile_id).replace("{k}", META.center_index);
     });
+    const btn = $("toggle-example-ves");
+    if (btn) btn.onclick = () => {
+      exampleShowVes = !exampleShowVes;
+      btn.textContent = exampleShowVes ? "👁 Hide vesicles (see raw EM)" : "👁 Show vesicles";
+      exampleRecs.forEach(drawExample);
+    };
   }
 
   boot();
