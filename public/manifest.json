@@ -15,9 +15,9 @@
       "tile_id": "tile_0000",
       "category": "dense_neuropil",
       "kind": "fresh",
-      "x_start": 99102,
-      "y_start": 41401,
-      "z_crop": 5126
+      "x_start": 100916,
+      "y_start": 43210,
+      "z_crop": 4925
     },
     {
       "tile_id": "tile_0001",
@@ -31,44 +31,108 @@
       "tile_id": "tile_0002",
       "category": "medium",
       "kind": "fresh",
-      "x_start": 37655,
-      "y_start": 20253,
-      "z_crop": 4277
+      "x_start": 37036,
+      "y_start": 19975,
+      "z_crop": 4343
     },
     {
       "tile_id": "tile_0003",
       "category": "background",
       "kind": "fresh",
-      "x_start": 63653,
-      "y_start": 23595,
-      "z_crop": 254
+      "x_start": 43603,
+      "y_start": 23183,
+      "z_crop": 2476
     },
     {
       "tile_id": "tile_0004",
       "category": "high_voxel",
       "kind": "fresh",
-      "x_start": 99098,
-      "y_start": 41517,
-      "z_crop": 5124
+      "x_start": 101980,
+      "y_start": 43804,
+      "z_crop": 5127
     },
     {
       "tile_id": "tile_0005",
       "category": "low_voxel",
       "kind": "fresh",
-      "x_start": 99702,
-      "y_start": 41837,
-      "z_crop": 5124
+      "x_start": 98316,
+      "y_start": 41237,
+      "z_crop": 5127
+    },
+    {
+      "tile_id": "tile_0006",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 71874,
+      "y_start": 41350,
+      "z_crop": 273
     },
     {
       "tile_id": "tile_0007",
       "category": "dense_neuropil",
       "kind": "fresh",
-      "x_start": 99111,
-      "y_start": 41559,
-      "z_crop": 5126
+      "x_start": 100954,
+      "y_start": 43075,
+      "z_crop": 4925
     },
     {
       "tile_id": "tile_0008",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 60785,
+      "y_start": 43482,
+      "z_crop": 239
+    },
+    {
+      "tile_id": "tile_0009",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37147,
+      "y_start": 19801,
+      "z_crop": 4343
+    },
+    {
+      "tile_id": "tile_0010",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 42453,
+      "y_start": 23840,
+      "z_crop": 2477
+    },
+    {
+      "tile_id": "tile_0011",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 99388,
+      "y_start": 42531,
+      "z_crop": 5145
+    },
+    {
+      "tile_id": "tile_0012",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 100243,
+      "y_start": 43860,
+      "z_crop": 5127
+    },
+    {
+      "tile_id": "tile_0013",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 64928,
+      "y_start": 16521,
+      "z_crop": 655
+    },
+    {
+      "tile_id": "tile_0014",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99091,
+      "y_start": 41422,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0015",
       "category": "sparse",
       "kind": "fresh",
       "x_start": 69400,
@@ -76,485 +140,2406 @@
       "z_crop": 253
     },
     {
-      "tile_id": "tile_0009",
+      "tile_id": "tile_0016",
       "category": "medium",
       "kind": "fresh",
-      "x_start": 37824,
-      "y_start": 20189,
-      "z_crop": 4277
+      "x_start": 40645,
+      "y_start": 17675,
+      "z_crop": 4343
     },
     {
-      "tile_id": "tile_0010",
+      "tile_id": "tile_0017",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 43457,
+      "y_start": 23706,
+      "z_crop": 2481
+    },
+    {
+      "tile_id": "tile_0018",
       "category": "high_voxel",
       "kind": "fresh",
-      "x_start": 101569,
-      "y_start": 44242,
-      "z_crop": 5126
+      "x_start": 101528,
+      "y_start": 44621,
+      "z_crop": 5161
     },
     {
-      "tile_id": "tile_0011",
+      "tile_id": "tile_0019",
       "category": "low_voxel",
       "kind": "fresh",
-      "x_start": 102052,
-      "y_start": 41914,
+      "x_start": 99190,
+      "y_start": 43832,
+      "z_crop": 5129
+    },
+    {
+      "tile_id": "tile_0020",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 64928,
+      "y_start": 16521,
+      "z_crop": 660
+    },
+    {
+      "tile_id": "tile_0021",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99117,
+      "y_start": 41553,
       "z_crop": 5124
     },
     {
-      "tile_id": "tile_0013",
+      "tile_id": "tile_0022",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 51709,
+      "y_start": 54795,
+      "z_crop": 406
+    },
+    {
+      "tile_id": "tile_0023",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40683,
+      "y_start": 17524,
+      "z_crop": 4343
+    },
+    {
+      "tile_id": "tile_0024",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 43445,
+      "y_start": 21468,
+      "z_crop": 2484
+    },
+    {
+      "tile_id": "tile_0025",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 98611,
+      "y_start": 41671,
+      "z_crop": 5178
+    },
+    {
+      "tile_id": "tile_0026",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 100929,
+      "y_start": 41996,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0027",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 25446,
-      "y_start": 38365,
-      "z_crop": 4893
+      "x_start": 68108,
+      "y_start": 24006,
+      "z_crop": 1604
+    },
+    {
+      "tile_id": "tile_0028",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99339,
+      "y_start": 44000,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0029",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 56282,
+      "y_start": 9142,
+      "z_crop": 473
+    },
+    {
+      "tile_id": "tile_0030",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37208,
+      "y_start": 20125,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0031",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 42433,
+      "y_start": 22249,
+      "z_crop": 2485
+    },
+    {
+      "tile_id": "tile_0032",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 99848,
+      "y_start": 42007,
+      "z_crop": 5178
+    },
+    {
+      "tile_id": "tile_0033",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99186,
+      "y_start": 41248,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0034",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68108,
+      "y_start": 24006,
+      "z_crop": 1607
+    },
+    {
+      "tile_id": "tile_0035",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99368,
+      "y_start": 44173,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0036",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 52121,
+      "y_start": 10441,
+      "z_crop": 474
+    },
+    {
+      "tile_id": "tile_0037",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37405,
+      "y_start": 19772,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0038",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 43535,
+      "y_start": 22498,
+      "z_crop": 2488
+    },
+    {
+      "tile_id": "tile_0039",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101933,
+      "y_start": 44085,
+      "z_crop": 5184
+    },
+    {
+      "tile_id": "tile_0040",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 101223,
+      "y_start": 44827,
+      "z_crop": 5144
+    },
+    {
+      "tile_id": "tile_0041",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 77063,
+      "y_start": 26967,
+      "z_crop": 2196
+    },
+    {
+      "tile_id": "tile_0042",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100257,
+      "y_start": 43989,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0043",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 65841,
+      "y_start": 56724,
+      "z_crop": 475
+    },
+    {
+      "tile_id": "tile_0044",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37990,
+      "y_start": 20037,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0045",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 43323,
+      "y_start": 23413,
+      "z_crop": 2490
+    },
+    {
+      "tile_id": "tile_0046",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101886,
+      "y_start": 44079,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0047",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 98860,
+      "y_start": 40930,
+      "z_crop": 5149
+    },
+    {
+      "tile_id": "tile_0048",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68281,
+      "y_start": 15857,
+      "z_crop": 2396
+    },
+    {
+      "tile_id": "tile_0049",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101459,
+      "y_start": 42802,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0050",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 66318,
+      "y_start": 53123,
+      "z_crop": 1152
+    },
+    {
+      "tile_id": "tile_0051",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40606,
+      "y_start": 17795,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0052",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 42977,
+      "y_start": 21921,
+      "z_crop": 2511
+    },
+    {
+      "tile_id": "tile_0053",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101895,
+      "y_start": 44101,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0054",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 100880,
+      "y_start": 43689,
+      "z_crop": 5153
+    },
+    {
+      "tile_id": "tile_0055",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 92722,
+      "y_start": 35676,
+      "z_crop": 3118
+    },
+    {
+      "tile_id": "tile_0056",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99102,
+      "y_start": 41401,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0057",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 52334,
+      "y_start": 49364,
+      "z_crop": 1283
+    },
+    {
+      "tile_id": "tile_0058",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40734,
+      "y_start": 18395,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0059",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 43730,
+      "y_start": 23726,
+      "z_crop": 2516
+    },
+    {
+      "tile_id": "tile_0060",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101897,
+      "y_start": 44116,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0061",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 100415,
+      "y_start": 42423,
+      "z_crop": 5161
+    },
+    {
+      "tile_id": "tile_0062",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 101627,
+      "y_start": 30079,
+      "z_crop": 3246
+    },
+    {
+      "tile_id": "tile_0063",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99111,
+      "y_start": 41559,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0064",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 94449,
+      "y_start": 27123,
+      "z_crop": 1367
+    },
+    {
+      "tile_id": "tile_0065",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40775,
+      "y_start": 18230,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0066",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 44726,
+      "y_start": 21937,
+      "z_crop": 2527
+    },
+    {
+      "tile_id": "tile_0067",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101902,
+      "y_start": 44062,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0068",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 101223,
+      "y_start": 44751,
+      "z_crop": 5163
+    },
+    {
+      "tile_id": "tile_0069",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 77076,
+      "y_start": 12852,
+      "z_crop": 3277
+    },
+    {
+      "tile_id": "tile_0070",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100199,
+      "y_start": 44168,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0071",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 61807,
+      "y_start": 7136,
+      "z_crop": 1401
+    },
+    {
+      "tile_id": "tile_0072",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37191,
+      "y_start": 20105,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0073",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 42583,
+      "y_start": 22028,
+      "z_crop": 2553
+    },
+    {
+      "tile_id": "tile_0074",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101908,
+      "y_start": 44079,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0075",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 98366,
+      "y_start": 44894,
+      "z_crop": 5175
+    },
+    {
+      "tile_id": "tile_0076",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 71564,
+      "y_start": 15856,
+      "z_crop": 3429
+    },
+    {
+      "tile_id": "tile_0077",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100283,
+      "y_start": 44032,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0078",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 52980,
+      "y_start": 8231,
+      "z_crop": 1420
+    },
+    {
+      "tile_id": "tile_0079",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37429,
+      "y_start": 19821,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0080",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 41478,
+      "y_start": 22702,
+      "z_crop": 2554
+    },
+    {
+      "tile_id": "tile_0081",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101913,
+      "y_start": 44043,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0082",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99948,
+      "y_start": 44187,
+      "z_crop": 5176
+    },
+    {
+      "tile_id": "tile_0083",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 48583,
+      "y_start": 12448,
+      "z_crop": 3440
+    },
+    {
+      "tile_id": "tile_0084",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100730,
+      "y_start": 41373,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0085",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 110829,
+      "y_start": 49862,
+      "z_crop": 1638
+    },
+    {
+      "tile_id": "tile_0086",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37487,
+      "y_start": 19961,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0087",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 25949,
+      "y_start": 39447,
+      "z_crop": 3844
+    },
+    {
+      "tile_id": "tile_0088",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101915,
+      "y_start": 44089,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0089",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 101450,
+      "y_start": 44277,
+      "z_crop": 5176
+    },
+    {
+      "tile_id": "tile_0090",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 50886,
+      "y_start": 21129,
+      "z_crop": 3603
+    },
+    {
+      "tile_id": "tile_0091",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100795,
+      "y_start": 41503,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0092",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 97506,
+      "y_start": 23553,
+      "z_crop": 1673
+    },
+    {
+      "tile_id": "tile_0093",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 38124,
+      "y_start": 19853,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0094",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 26441,
+      "y_start": 39624,
+      "z_crop": 3845
+    },
+    {
+      "tile_id": "tile_0095",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101917,
+      "y_start": 44066,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0096",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99153,
+      "y_start": 41191,
+      "z_crop": 5181
+    },
+    {
+      "tile_id": "tile_0097",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 88623,
+      "y_start": 41539,
+      "z_crop": 3911
+    },
+    {
+      "tile_id": "tile_0098",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100215,
+      "y_start": 44169,
+      "z_crop": 5128
+    },
+    {
+      "tile_id": "tile_0099",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 97713,
+      "y_start": 54778,
+      "z_crop": 1885
+    },
+    {
+      "tile_id": "tile_0100",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40806,
+      "y_start": 18312,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0101",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 25811,
+      "y_start": 39626,
+      "z_crop": 3848
+    },
+    {
+      "tile_id": "tile_0102",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101920,
+      "y_start": 44105,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0103",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 98423,
+      "y_start": 41116,
+      "z_crop": 5194
+    },
+    {
+      "tile_id": "tile_0104",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68328,
+      "y_start": 20855,
+      "z_crop": 3987
+    },
+    {
+      "tile_id": "tile_0105",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100296,
+      "y_start": 44034,
+      "z_crop": 5128
+    },
+    {
+      "tile_id": "tile_0106",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 72701,
+      "y_start": 3420,
+      "z_crop": 3491
+    },
+    {
+      "tile_id": "tile_0107",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40813,
+      "y_start": 18469,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0108",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 25873,
+      "y_start": 39784,
+      "z_crop": 3856
+    },
+    {
+      "tile_id": "tile_0109",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101927,
+      "y_start": 44131,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0110",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 98342,
+      "y_start": 43579,
+      "z_crop": 5198
+    },
+    {
+      "tile_id": "tile_0111",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 46564,
+      "y_start": 22893,
+      "z_crop": 4205
+    },
+    {
+      "tile_id": "tile_0112",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100677,
+      "y_start": 41412,
+      "z_crop": 5128
+    },
+    {
+      "tile_id": "tile_0113",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 76974,
+      "y_start": 3122,
+      "z_crop": 3491
+    },
+    {
+      "tile_id": "tile_0114",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37853,
+      "y_start": 19847,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0115",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 26858,
+      "y_start": 38800,
+      "z_crop": 3860
+    },
+    {
+      "tile_id": "tile_0116",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101941,
+      "y_start": 44128,
+      "z_crop": 5185
+    },
+    {
+      "tile_id": "tile_0117",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99002,
+      "y_start": 44130,
+      "z_crop": 5205
+    },
+    {
+      "tile_id": "tile_0118",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 23449,
+      "y_start": 22986,
+      "z_crop": 4331
+    },
+    {
+      "tile_id": "tile_0119",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100807,
+      "y_start": 41520,
+      "z_crop": 5128
+    },
+    {
+      "tile_id": "tile_0120",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 85914,
+      "y_start": 12154,
+      "z_crop": 3955
+    },
+    {
+      "tile_id": "tile_0121",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 38109,
+      "y_start": 20319,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0122",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 28162,
+      "y_start": 38904,
+      "z_crop": 3869
+    },
+    {
+      "tile_id": "tile_0123",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 99016,
+      "y_start": 41193,
+      "z_crop": 5189
+    },
+    {
+      "tile_id": "tile_0124",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 98571,
+      "y_start": 43744,
+      "z_crop": 5210
+    },
+    {
+      "tile_id": "tile_0125",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 30789,
+      "y_start": 25484,
+      "z_crop": 4656
+    },
+    {
+      "tile_id": "tile_0126",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101482,
+      "y_start": 43985,
+      "z_crop": 5128
+    },
+    {
+      "tile_id": "tile_0127",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 85923,
+      "y_start": 11975,
+      "z_crop": 4156
+    },
+    {
+      "tile_id": "tile_0128",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 38293,
+      "y_start": 19952,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0129",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 27991,
+      "y_start": 37144,
+      "z_crop": 3873
+    },
+    {
+      "tile_id": "tile_0130",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 98581,
+      "y_start": 43680,
+      "z_crop": 5191
+    },
+    {
+      "tile_id": "tile_0131",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99814,
+      "y_start": 41701,
+      "z_crop": 5212
+    },
+    {
+      "tile_id": "tile_0132",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 45171,
+      "y_start": 31577,
+      "z_crop": 4673
+    },
+    {
+      "tile_id": "tile_0133",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102098,
+      "y_start": 43834,
+      "z_crop": 5128
+    },
+    {
+      "tile_id": "tile_0134",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 19005,
+      "y_start": 35002,
+      "z_crop": 5701
+    },
+    {
+      "tile_id": "tile_0135",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40458,
+      "y_start": 17713,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0136",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 40178,
+      "y_start": 16468,
+      "z_crop": 4306
+    },
+    {
+      "tile_id": "tile_0137",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101955,
+      "y_start": 44074,
+      "z_crop": 5191
+    },
+    {
+      "tile_id": "tile_0138",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99070,
+      "y_start": 42330,
+      "z_crop": 5215
+    },
+    {
+      "tile_id": "tile_0140",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100196,
+      "y_start": 44143,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0141",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 75102,
+      "y_start": 19518,
+      "z_crop": 5751
+    },
+    {
+      "tile_id": "tile_0142",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40600,
+      "y_start": 17563,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0143",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 39665,
+      "y_start": 19634,
+      "z_crop": 4338
+    },
+    {
+      "tile_id": "tile_0144",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 98951,
+      "y_start": 41161,
+      "z_crop": 5193
+    },
+    {
+      "tile_id": "tile_0145",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99272,
+      "y_start": 40964,
+      "z_crop": 5215
+    },
+    {
+      "tile_id": "tile_0146",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 77619,
+      "y_start": 19948,
+      "z_crop": 5009
+    },
+    {
+      "tile_id": "tile_0147",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100230,
+      "y_start": 44007,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0148",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 25189,
+      "y_start": 44933,
+      "z_crop": 5857
+    },
+    {
+      "tile_id": "tile_0149",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40786,
+      "y_start": 16417,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0150",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 39665,
+      "y_start": 18811,
+      "z_crop": 4343
+    },
+    {
+      "tile_id": "tile_0151",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101953,
+      "y_start": 43995,
+      "z_crop": 5194
+    },
+    {
+      "tile_id": "tile_0152",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 98945,
+      "y_start": 41634,
+      "z_crop": 5220
+    },
+    {
+      "tile_id": "tile_0153",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 86357,
+      "y_start": 33692,
+      "z_crop": 5055
+    },
+    {
+      "tile_id": "tile_0154",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100705,
+      "y_start": 41434,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0155",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 18593,
+      "y_start": 40836,
+      "z_crop": 5858
+    },
+    {
+      "tile_id": "tile_0156",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37072,
+      "y_start": 20051,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0157",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 39193,
+      "y_start": 20111,
+      "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0158",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101947,
+      "y_start": 43949,
+      "z_crop": 5203
+    },
+    {
+      "tile_id": "tile_0159",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 101973,
+      "y_start": 44094,
+      "z_crop": 5224
+    },
+    {
+      "tile_id": "tile_0160",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 95952,
+      "y_start": 33580,
+      "z_crop": 5068
+    },
+    {
+      "tile_id": "tile_0161",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101863,
+      "y_start": 43695,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0162",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 67460,
+      "y_start": 23885,
+      "z_crop": 5860
+    },
+    {
+      "tile_id": "tile_0163",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37210,
+      "y_start": 20099,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0164",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 37538,
+      "y_start": 16726,
+      "z_crop": 4346
+    },
+    {
+      "tile_id": "tile_0165",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 100597,
+      "y_start": 44764,
+      "z_crop": 5214
+    },
+    {
+      "tile_id": "tile_0166",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 100051,
+      "y_start": 42175,
+      "z_crop": 5232
+    },
+    {
+      "tile_id": "tile_0168",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102008,
+      "y_start": 43965,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0169",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 81864,
+      "y_start": 17545,
+      "z_crop": 5890
+    },
+    {
+      "tile_id": "tile_0170",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40503,
+      "y_start": 16986,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0171",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 39986,
+      "y_start": 18877,
+      "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0172",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101999,
+      "y_start": 41060,
+      "z_crop": 5219
+    },
+    {
+      "tile_id": "tile_0173",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 100886,
+      "y_start": 40927,
+      "z_crop": 5241
+    },
+    {
+      "tile_id": "tile_0174",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 69179,
+      "y_start": 41397,
+      "z_crop": 5186
+    },
+    {
+      "tile_id": "tile_0175",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102091,
+      "y_start": 43817,
+      "z_crop": 5130
+    },
+    {
+      "tile_id": "tile_0176",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 17589,
+      "y_start": 32506,
+      "z_crop": 5891
+    },
+    {
+      "tile_id": "tile_0177",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40552,
+      "y_start": 16781,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0178",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 38943,
+      "y_start": 16692,
+      "z_crop": 4348
+    },
+    {
+      "tile_id": "tile_0179",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 85420,
+      "y_start": 35419,
+      "z_crop": 5466
+    },
+    {
+      "tile_id": "tile_0180",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100242,
+      "y_start": 44113,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0181",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 97843,
+      "y_start": 20826,
+      "z_crop": 5931
+    },
+    {
+      "tile_id": "tile_0182",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40624,
+      "y_start": 17704,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0183",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 37021,
+      "y_start": 16672,
+      "z_crop": 4350
+    },
+    {
+      "tile_id": "tile_0184",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 29344,
+      "y_start": 24193,
+      "z_crop": 5617
+    },
+    {
+      "tile_id": "tile_0185",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100378,
+      "y_start": 44064,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0186",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 26634,
+      "y_start": 45150,
+      "z_crop": 5936
+    },
+    {
+      "tile_id": "tile_0187",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40634,
+      "y_start": 17867,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0188",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 37899,
+      "y_start": 17566,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0190",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101883,
+      "y_start": 43681,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0191",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 44020,
+      "y_start": 44978,
+      "z_crop": 5936
+    },
+    {
+      "tile_id": "tile_0192",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 36831,
+      "y_start": 19952,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0193",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 36927,
+      "y_start": 17057,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0194",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 35183,
+      "y_start": 41305,
+      "z_crop": 6496
+    },
+    {
+      "tile_id": "tile_0195",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101956,
+      "y_start": 44131,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0196",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 87092,
+      "y_start": 40845,
+      "z_crop": 5937
+    },
+    {
+      "tile_id": "tile_0197",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37829,
+      "y_start": 19988,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0198",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 39309,
+      "y_start": 18346,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0199",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 38950,
+      "y_start": 40746,
+      "z_crop": 6630
+    },
+    {
+      "tile_id": "tile_0200",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102020,
+      "y_start": 43959,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0201",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 73774,
+      "y_start": 24395,
+      "z_crop": 6028
+    },
+    {
+      "tile_id": "tile_0202",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37948,
+      "y_start": 20233,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0203",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102062,
+      "y_start": 43829,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0204",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 70946,
+      "y_start": 19484,
+      "z_crop": 6034
+    },
+    {
+      "tile_id": "tile_0205",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40405,
+      "y_start": 17507,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0206",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100241,
+      "y_start": 44100,
+      "z_crop": 5134
+    },
+    {
+      "tile_id": "tile_0207",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 89990,
+      "y_start": 16148,
+      "z_crop": 6073
+    },
+    {
+      "tile_id": "tile_0208",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40506,
+      "y_start": 17726,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0209",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100369,
+      "y_start": 44061,
+      "z_crop": 5134
+    },
+    {
+      "tile_id": "tile_0210",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 52961,
+      "y_start": 48872,
+      "z_crop": 6122
+    },
+    {
+      "tile_id": "tile_0211",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40674,
+      "y_start": 17849,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0212",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101894,
+      "y_start": 43680,
+      "z_crop": 5134
+    },
+    {
+      "tile_id": "tile_0213",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 38514,
+      "y_start": 16087,
+      "z_crop": 6150
+    },
+    {
+      "tile_id": "tile_0214",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37166,
+      "y_start": 20119,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0215",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101964,
+      "y_start": 44087,
+      "z_crop": 5134
+    },
+    {
+      "tile_id": "tile_0216",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 73833,
+      "y_start": 24335,
+      "z_crop": 6169
+    },
+    {
+      "tile_id": "tile_0217",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37301,
+      "y_start": 20223,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0218",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101985,
+      "y_start": 43817,
+      "z_crop": 5134
+    },
+    {
+      "tile_id": "tile_0219",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 15398,
+      "y_start": 28473,
+      "z_crop": 6275
+    },
+    {
+      "tile_id": "tile_0220",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37451,
+      "y_start": 19646,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0221",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102018,
+      "y_start": 43946,
+      "z_crop": 5134
+    },
+    {
+      "tile_id": "tile_0222",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 46867,
+      "y_start": 24258,
+      "z_crop": 6549
+    },
+    {
+      "tile_id": "tile_0223",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40483,
+      "y_start": 17161,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0224",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99025,
+      "y_start": 42055,
+      "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0225",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 69508,
+      "y_start": 28450,
+      "z_crop": 6811
+    },
+    {
+      "tile_id": "tile_0226",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40640,
+      "y_start": 18305,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0227",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99874,
+      "y_start": 44448,
+      "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0228",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 51075,
+      "y_start": 29565,
+      "z_crop": 6829
+    },
+    {
+      "tile_id": "tile_0229",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40684,
+      "y_start": 18438,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0230",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101155,
+      "y_start": 42987,
+      "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0231",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101235,
+      "y_start": 42845,
+      "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0232",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101310,
+      "y_start": 44665,
+      "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0233",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101446,
+      "y_start": 44671,
+      "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0234",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99908,
+      "y_start": 43623,
+      "z_crop": 5184
+    },
+    {
+      "tile_id": "tile_0235",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100070,
+      "y_start": 43675,
+      "z_crop": 5184
+    },
+    {
+      "tile_id": "tile_0236",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100663,
+      "y_start": 44685,
+      "z_crop": 5184
+    },
+    {
+      "tile_id": "tile_0237",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101802,
+      "y_start": 44096,
+      "z_crop": 5184
+    },
+    {
+      "tile_id": "tile_0238",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101950,
+      "y_start": 44011,
+      "z_crop": 5184
+    },
+    {
+      "tile_id": "tile_0239",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101950,
+      "y_start": 44141,
+      "z_crop": 5184
     }
   ],
   "examples": [
     {
-      "tile_id": "tile_0014",
-      "x_start": 38950,
-      "y_start": 40746,
-      "z_crop": 6630,
-      "gt_points": [],
+      "tile_id": "tile_0189",
+      "x_start": 63470,
+      "y_start": 31482,
+      "z_crop": 6064,
+      "gt_points": [
+        {
+          "x_local": 53,
+          "y_local": 193
+        }
+      ],
       "note": "Sparse tile - only a few clear vesicles (dark ring, light lumen). Don't over-click."
     },
     {
-      "tile_id": "tile_0012",
-      "x_start": 77076,
-      "y_start": 12852,
-      "z_crop": 3277,
+      "tile_id": "tile_0139",
+      "x_start": 43293,
+      "y_start": 37860,
+      "z_crop": 4918,
       "gt_points": [
         {
-          "x_local": 231,
-          "y_local": 29
+          "x_local": 115,
+          "y_local": 8
         },
         {
-          "x_local": 51,
-          "y_local": 30
+          "x_local": 86,
+          "y_local": 28
         },
         {
-          "x_local": 45,
-          "y_local": 32
+          "x_local": 27,
+          "y_local": 40
         },
         {
-          "x_local": 236,
-          "y_local": 35
-        },
-        {
-          "x_local": 219,
-          "y_local": 37
-        },
-        {
-          "x_local": 42,
-          "y_local": 41
-        },
-        {
-          "x_local": 11,
+          "x_local": 147,
           "y_local": 42
         },
         {
-          "x_local": 242,
-          "y_local": 45
+          "x_local": 131,
+          "y_local": 58
         },
         {
-          "x_local": 205,
-          "y_local": 53
+          "x_local": 125,
+          "y_local": 64
         },
         {
-          "x_local": 249,
-          "y_local": 63
-        },
-        {
-          "x_local": 237,
+          "x_local": 247,
           "y_local": 66
         },
         {
-          "x_local": 34,
-          "y_local": 70
+          "x_local": 137,
+          "y_local": 66
         },
         {
-          "x_local": 13,
-          "y_local": 72
-        },
-        {
-          "x_local": 23,
+          "x_local": 157,
           "y_local": 80
         },
         {
-          "x_local": 91,
+          "x_local": 247,
+          "y_local": 78
+        },
+        {
+          "x_local": 98,
           "y_local": 82
         },
         {
-          "x_local": 81,
-          "y_local": 87
+          "x_local": 83,
+          "y_local": 90
         },
         {
-          "x_local": 238,
-          "y_local": 95
+          "x_local": 177,
+          "y_local": 92
         },
         {
-          "x_local": 45,
-          "y_local": 97
+          "x_local": 121,
+          "y_local": 96
         },
         {
-          "x_local": 94,
-          "y_local": 98
+          "x_local": 169,
+          "y_local": 102
         },
         {
-          "x_local": 218,
-          "y_local": 103
-        },
-        {
-          "x_local": 211,
-          "y_local": 112
-        },
-        {
-          "x_local": 194,
-          "y_local": 131
-        },
-        {
-          "x_local": 230,
-          "y_local": 158
-        },
-        {
-          "x_local": 242,
-          "y_local": 159
-        },
-        {
-          "x_local": 165,
-          "y_local": 160
-        },
-        {
-          "x_local": 224,
+          "x_local": 20,
           "y_local": 164
         },
         {
-          "x_local": 236,
-          "y_local": 166
-        },
-        {
-          "x_local": 234,
+          "x_local": 27,
           "y_local": 176
         },
         {
-          "x_local": 58,
-          "y_local": 181
-        },
-        {
-          "x_local": 55,
-          "y_local": 185
-        },
-        {
-          "x_local": 31,
-          "y_local": 183
-        },
-        {
-          "x_local": 45,
+          "x_local": 187,
           "y_local": 196
         },
         {
-          "x_local": 24,
-          "y_local": 205
+          "x_local": 179,
+          "y_local": 200
         },
         {
-          "x_local": 15,
+          "x_local": 215,
+          "y_local": 214
+        },
+        {
+          "x_local": 89,
           "y_local": 224
         },
         {
-          "x_local": 217,
-          "y_local": 234
+          "x_local": 3,
+          "y_local": 230
         },
         {
-          "x_local": 51,
-          "y_local": 244
+          "x_local": 95,
+          "y_local": 232
         },
         {
-          "x_local": 199,
-          "y_local": 247
+          "x_local": 136,
+          "y_local": 246
+        },
+        {
+          "x_local": 21,
+          "y_local": 252
+        },
+        {
+          "x_local": 93,
+          "y_local": 77
+        },
+        {
+          "x_local": 149,
+          "y_local": 33
+        },
+        {
+          "x_local": 168,
+          "y_local": 3
+        },
+        {
+          "x_local": 150,
+          "y_local": 24
+        },
+        {
+          "x_local": 120,
+          "y_local": 7
+        },
+        {
+          "x_local": 31,
+          "y_local": 33
+        },
+        {
+          "x_local": 72,
+          "y_local": 240
+        },
+        {
+          "x_local": 74,
+          "y_local": 246
+        },
+        {
+          "x_local": 79,
+          "y_local": 136
         }
       ],
       "note": "Typical tile - click the centre of each round vesicle. Use Z +/- to confirm faint ones."
     },
     {
-      "tile_id": "tile_0006",
-      "x_start": 96591,
-      "y_start": 27067,
-      "z_crop": 3145,
+      "tile_id": "tile_0167",
+      "x_start": 102467,
+      "y_start": 43986,
+      "z_crop": 5107,
       "gt_points": [
         {
-          "x_local": 30,
-          "y_local": 3
-        },
-        {
-          "x_local": 41,
-          "y_local": 4
-        },
-        {
-          "x_local": 175,
-          "y_local": 4
-        },
-        {
-          "x_local": 231,
-          "y_local": 3
+          "x_local": 207,
+          "y_local": 11
         },
         {
           "x_local": 187,
-          "y_local": 8
-        },
-        {
-          "x_local": 17,
-          "y_local": 8
-        },
-        {
-          "x_local": 253,
-          "y_local": 10
-        },
-        {
-          "x_local": 223,
-          "y_local": 12
-        },
-        {
-          "x_local": 211,
-          "y_local": 12
-        },
-        {
-          "x_local": 178,
           "y_local": 14
         },
         {
-          "x_local": 200,
-          "y_local": 24
+          "x_local": 134,
+          "y_local": 14
         },
         {
-          "x_local": 173,
-          "y_local": 22
+          "x_local": 162,
+          "y_local": 15
+        },
+        {
+          "x_local": 215,
+          "y_local": 17
         },
         {
           "x_local": 229,
-          "y_local": 22
+          "y_local": 17
         },
         {
-          "x_local": 19,
-          "y_local": 24
+          "x_local": 223,
+          "y_local": 26
         },
         {
-          "x_local": 13,
-          "y_local": 38
+          "x_local": 206,
+          "y_local": 31
         },
         {
-          "x_local": 25,
-          "y_local": 32
+          "x_local": 200,
+          "y_local": 33
         },
         {
-          "x_local": 199,
-          "y_local": 36
+          "x_local": 218,
+          "y_local": 37
         },
         {
-          "x_local": 209,
-          "y_local": 36
+          "x_local": 239,
+          "y_local": 42
         },
         {
-          "x_local": 2,
-          "y_local": 38
-        },
-        {
-          "x_local": 192,
-          "y_local": 40
-        },
-        {
-          "x_local": 235,
-          "y_local": 40
-        },
-        {
-          "x_local": 191,
+          "x_local": 243,
           "y_local": 50
         },
         {
-          "x_local": 213,
-          "y_local": 52
+          "x_local": 78,
+          "y_local": 62
         },
         {
-          "x_local": 202,
-          "y_local": 58
+          "x_local": 97,
+          "y_local": 65
         },
         {
-          "x_local": 211,
-          "y_local": 58
+          "x_local": 83,
+          "y_local": 67
         },
         {
-          "x_local": 185,
-          "y_local": 70
+          "x_local": 102,
+          "y_local": 74
         },
         {
-          "x_local": 195,
+          "x_local": 90,
+          "y_local": 75
+        },
+        {
+          "x_local": 132,
+          "y_local": 76
+        },
+        {
+          "x_local": 40,
+          "y_local": 97
+        },
+        {
+          "x_local": 96,
+          "y_local": 97
+        },
+        {
+          "x_local": 114,
+          "y_local": 102
+        },
+        {
+          "x_local": 79,
+          "y_local": 105
+        },
+        {
+          "x_local": 71,
+          "y_local": 107
+        },
+        {
+          "x_local": 86,
+          "y_local": 107
+        },
+        {
+          "x_local": 114,
+          "y_local": 112
+        },
+        {
+          "x_local": 30,
+          "y_local": 116
+        },
+        {
+          "x_local": 50,
+          "y_local": 118
+        },
+        {
+          "x_local": 114,
+          "y_local": 119
+        },
+        {
+          "x_local": 98,
+          "y_local": 122
+        },
+        {
+          "x_local": 26,
+          "y_local": 124
+        },
+        {
+          "x_local": 54,
+          "y_local": 125
+        },
+        {
+          "x_local": 69,
+          "y_local": 128
+        },
+        {
+          "x_local": 43,
+          "y_local": 129
+        },
+        {
+          "x_local": 117,
+          "y_local": 130
+        },
+        {
+          "x_local": 126,
+          "y_local": 133
+        },
+        {
+          "x_local": 50,
+          "y_local": 134
+        },
+        {
+          "x_local": 86,
+          "y_local": 132
+        },
+        {
+          "x_local": 24,
+          "y_local": 136
+        },
+        {
+          "x_local": 111,
+          "y_local": 142
+        },
+        {
+          "x_local": 58,
+          "y_local": 140
+        },
+        {
+          "x_local": 123,
+          "y_local": 140
+        },
+        {
+          "x_local": 46,
+          "y_local": 144
+        },
+        {
+          "x_local": 64,
+          "y_local": 145
+        },
+        {
+          "x_local": 78,
+          "y_local": 148
+        },
+        {
+          "x_local": 102,
+          "y_local": 151
+        },
+        {
+          "x_local": 53,
+          "y_local": 153
+        },
+        {
+          "x_local": 86,
+          "y_local": 152
+        },
+        {
+          "x_local": 9,
+          "y_local": 156
+        },
+        {
+          "x_local": 232,
+          "y_local": 158
+        },
+        {
+          "x_local": 79,
+          "y_local": 158
+        },
+        {
+          "x_local": 101,
+          "y_local": 158
+        },
+        {
+          "x_local": 126,
+          "y_local": 163
+        },
+        {
+          "x_local": 114,
+          "y_local": 164
+        },
+        {
+          "x_local": 105,
+          "y_local": 166
+        },
+        {
+          "x_local": 253,
+          "y_local": 168
+        },
+        {
+          "x_local": 53,
+          "y_local": 169
+        },
+        {
+          "x_local": 62,
+          "y_local": 168
+        },
+        {
+          "x_local": 222,
+          "y_local": 172
+        },
+        {
+          "x_local": 38,
+          "y_local": 173
+        },
+        {
+          "x_local": 9,
+          "y_local": 175
+        },
+        {
+          "x_local": 18,
+          "y_local": 177
+        },
+        {
+          "x_local": 94,
+          "y_local": 180
+        },
+        {
+          "x_local": 250,
+          "y_local": 179
+        },
+        {
+          "x_local": 79,
+          "y_local": 182
+        },
+        {
+          "x_local": 86,
+          "y_local": 185
+        },
+        {
+          "x_local": 40,
+          "y_local": 190
+        },
+        {
+          "x_local": 83,
+          "y_local": 192
+        },
+        {
+          "x_local": 9,
+          "y_local": 194
+        },
+        {
+          "x_local": 65,
+          "y_local": 194
+        },
+        {
+          "x_local": 134,
+          "y_local": 197
+        },
+        {
+          "x_local": 61,
+          "y_local": 202
+        },
+        {
+          "x_local": 222,
+          "y_local": 204
+        },
+        {
+          "x_local": 26,
+          "y_local": 208
+        },
+        {
+          "x_local": 58,
+          "y_local": 208
+        },
+        {
+          "x_local": 106,
+          "y_local": 217
+        },
+        {
+          "x_local": 127,
+          "y_local": 219
+        },
+        {
+          "x_local": 100,
+          "y_local": 225
+        },
+        {
+          "x_local": 111,
+          "y_local": 228
+        },
+        {
+          "x_local": 250,
+          "y_local": 233
+        },
+        {
+          "x_local": 107,
+          "y_local": 252
+        },
+        {
+          "x_local": 50,
+          "y_local": 245
+        },
+        {
+          "x_local": 125,
+          "y_local": 246
+        },
+        {
+          "x_local": 119,
+          "y_local": 252
+        },
+        {
+          "x_local": 124,
+          "y_local": 12
+        },
+        {
+          "x_local": 125,
+          "y_local": 4
+        },
+        {
+          "x_local": 133,
+          "y_local": 5
+        },
+        {
+          "x_local": 115,
+          "y_local": 7
+        },
+        {
+          "x_local": 191,
+          "y_local": 24
+        },
+        {
+          "x_local": 201,
+          "y_local": 24
+        },
+        {
+          "x_local": 196,
+          "y_local": 11
+        },
+        {
+          "x_local": 241,
+          "y_local": 55
+        },
+        {
+          "x_local": 232,
+          "y_local": 48
+        },
+        {
+          "x_local": 241,
+          "y_local": 63
+        },
+        {
+          "x_local": 103,
+          "y_local": 43
+        },
+        {
+          "x_local": 99,
+          "y_local": 40
+        },
+        {
+          "x_local": 94,
+          "y_local": 71
+        },
+        {
+          "x_local": 87,
+          "y_local": 60
+        },
+        {
+          "x_local": 79,
+          "y_local": 73
+        },
+        {
+          "x_local": 73,
+          "y_local": 68
+        },
+        {
+          "x_local": 64,
+          "y_local": 86
+        },
+        {
+          "x_local": 37,
+          "y_local": 108
+        },
+        {
+          "x_local": 39,
+          "y_local": 115
+        },
+        {
+          "x_local": 107,
+          "y_local": 107
+        },
+        {
+          "x_local": 104,
+          "y_local": 127
+        },
+        {
+          "x_local": 93,
+          "y_local": 142
+        },
+        {
+          "x_local": 78,
+          "y_local": 129
+        },
+        {
+          "x_local": 70,
           "y_local": 84
         },
         {
           "x_local": 49,
-          "y_local": 128
+          "y_local": 108
         },
         {
-          "x_local": 201,
-          "y_local": 128
+          "x_local": 18,
+          "y_local": 146
         },
         {
-          "x_local": 83,
-          "y_local": 130
+          "x_local": 108,
+          "y_local": 153
         },
         {
-          "x_local": 212,
-          "y_local": 144
+          "x_local": 133,
+          "y_local": 178
         },
         {
-          "x_local": 149,
-          "y_local": 212
+          "x_local": 88,
+          "y_local": 202
         },
         {
-          "x_local": 11,
-          "y_local": 32
+          "x_local": 69,
+          "y_local": 233
         },
         {
-          "x_local": 9,
-          "y_local": 44
+          "x_local": 118,
+          "y_local": 207
         },
         {
-          "x_local": 4,
-          "y_local": 22
+          "x_local": 102,
+          "y_local": 239
         },
         {
-          "x_local": 1,
-          "y_local": 14
-        },
-        {
-          "x_local": 36,
-          "y_local": 33
+          "x_local": 102,
+          "y_local": 244
         },
         {
           "x_local": 42,
-          "y_local": 31
-        },
-        {
-          "x_local": 48,
-          "y_local": 35
-        },
-        {
-          "x_local": 39,
-          "y_local": 13
-        },
-        {
-          "x_local": 44,
-          "y_local": 24
-        },
-        {
-          "x_local": 113,
-          "y_local": 203
-        },
-        {
-          "x_local": 157,
-          "y_local": 209
-        },
-        {
-          "x_local": 19,
-          "y_local": 185
-        },
-        {
-          "x_local": 87,
-          "y_local": 126
-        },
-        {
-          "x_local": 93,
-          "y_local": 127
-        },
-        {
-          "x_local": 208,
-          "y_local": 85
-        },
-        {
-          "x_local": 203,
-          "y_local": 82
-        },
-        {
-          "x_local": 188,
-          "y_local": 57
-        },
-        {
-          "x_local": 201,
-          "y_local": 50
-        },
-        {
-          "x_local": 207,
-          "y_local": 51
-        },
-        {
-          "x_local": 223,
-          "y_local": 48
-        },
-        {
-          "x_local": 230,
-          "y_local": 48
-        },
-        {
-          "x_local": 237,
-          "y_local": 34
-        },
-        {
-          "x_local": 242,
-          "y_local": 36
-        },
-        {
-          "x_local": 230,
-          "y_local": 30
-        },
-        {
-          "x_local": 225,
-          "y_local": 38
-        },
-        {
-          "x_local": 209,
-          "y_local": 27
-        },
-        {
-          "x_local": 216,
-          "y_local": 22
-        },
-        {
-          "x_local": 230,
-          "y_local": 11
-        },
-        {
-          "x_local": 253,
-          "y_local": 19
-        },
-        {
-          "x_local": 205,
-          "y_local": 5
-        },
-        {
-          "x_local": 197,
-          "y_local": 4
-        },
-        {
-          "x_local": 191,
-          "y_local": 10
-        },
-        {
-          "x_local": 136,
-          "y_local": 222
-        },
-        {
-          "x_local": 78,
-          "y_local": 121
-        },
-        {
-          "x_local": 42,
-          "y_local": 46
-        },
-        {
-          "x_local": 29,
-          "y_local": 43
-        },
-        {
-          "x_local": 24,
-          "y_local": 2
+          "y_local": 183
         }
       ],
       "note": "Dense bouton - many packed vesicles. Mitochondria/ER are larger and irregular: do NOT click them."
