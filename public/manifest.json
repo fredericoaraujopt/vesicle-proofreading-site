@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "frame_px": 1280,
+    "tile_size": 256,
+    "center_offset": 512,
+    "z_context": 3,
+    "n_slices": 7,
+    "center_index": 3,
+    "image_template": "tiles/{tile_id}/{k}.jpg",
+    "instructions": "Click the centre of every synaptic vesicle (small round profile: dark membrane ring, lighter inside) inside the framed tile. Click a dot again to remove it. Use Z+/Z- for context; you may only annotate on the centre slice. Mitochondria, ER and membranes are NOT vesicles."
+  },
+  "tiles": [
+    {
+      "tile_id": "tile_0000",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99102,
+      "y_start": 41401,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0001",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 52264,
+      "y_start": 21693,
+      "z_crop": 198
+    },
+    {
+      "tile_id": "tile_0002",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37655,
+      "y_start": 20253,
+      "z_crop": 4277
+    },
+    {
+      "tile_id": "tile_0003",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 63653,
+      "y_start": 23595,
+      "z_crop": 254
+    },
+    {
+      "tile_id": "tile_0004",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 99098,
+      "y_start": 41517,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0005",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 99702,
+      "y_start": 41837,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0007",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99111,
+      "y_start": 41559,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0008",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 69400,
+      "y_start": 28374,
+      "z_crop": 253
+    },
+    {
+      "tile_id": "tile_0009",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37824,
+      "y_start": 20189,
+      "z_crop": 4277
+    },
+    {
+      "tile_id": "tile_0010",
+      "category": "high_voxel",
+      "kind": "fresh",
+      "x_start": 101569,
+      "y_start": 44242,
+      "z_crop": 5126
+    },
+    {
+      "tile_id": "tile_0011",
+      "category": "low_voxel",
+      "kind": "fresh",
+      "x_start": 102052,
+      "y_start": 41914,
+      "z_crop": 5124
+    },
+    {
+      "tile_id": "tile_0013",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 25446,
+      "y_start": 38365,
+      "z_crop": 4893
+    }
+  ],
+  "examples": [
+    {
+      "tile_id": "tile_0014",
+      "x_start": 38950,
+      "y_start": 40746,
+      "z_crop": 6630,
+      "gt_points": [],
+      "note": "Sparse tile - only a few clear vesicles (dark ring, light lumen). Don't over-click."
+    },
+    {
+      "tile_id": "tile_0012",
+      "x_start": 77076,
+      "y_start": 12852,
+      "z_crop": 3277,
+      "gt_points": [
+        {
+          "x_local": 231,
+          "y_local": 29
+        },
+        {
+          "x_local": 51,
+          "y_local": 30
+        },
+        {
+          "x_local": 45,
+          "y_local": 32
+        },
+        {
+          "x_local": 236,
+          "y_local": 35
+        },
+        {
+          "x_local": 219,
+          "y_local": 37
+        },
+        {
+          "x_local": 42,
+          "y_local": 41
+        },
+        {
+          "x_local": 11,
+          "y_local": 42
+        },
+        {
+          "x_local": 242,
+          "y_local": 45
+        },
+        {
+          "x_local": 205,
+          "y_local": 53
+        },
+        {
+          "x_local": 249,
+          "y_local": 63
+        },
+        {
+          "x_local": 237,
+          "y_local": 66
+        },
+        {
+          "x_local": 34,
+          "y_local": 70
+        },
+        {
+          "x_local": 13,
+          "y_local": 72
+        },
+        {
+          "x_local": 23,
+          "y_local": 80
+        },
+        {
+          "x_local": 91,
+          "y_local": 82
+        },
+        {
+          "x_local": 81,
+          "y_local": 87
+        },
+        {
+          "x_local": 238,
+          "y_local": 95
+        },
+        {
+          "x_local": 45,
+          "y_local": 97
+        },
+        {
+          "x_local": 94,
+          "y_local": 98
+        },
+        {
+          "x_local": 218,
+          "y_local": 103
+        },
+        {
+          "x_local": 211,
+          "y_local": 112
+        },
+        {
+          "x_local": 194,
+          "y_local": 131
+        },
+        {
+          "x_local": 230,
+          "y_local": 158
+        },
+        {
+          "x_local": 242,
+          "y_local": 159
+        },
+        {
+          "x_local": 165,
+          "y_local": 160
+        },
+        {
+          "x_local": 224,
+          "y_local": 164
+        },
+        {
+          "x_local": 236,
+          "y_local": 166
+        },
+        {
+          "x_local": 234,
+          "y_local": 176
+        },
+        {
+          "x_local": 58,
+          "y_local": 181
+        },
+        {
+          "x_local": 55,
+          "y_local": 185
+        },
+        {
+          "x_local": 31,
+          "y_local": 183
+        },
+        {
+          "x_local": 45,
+          "y_local": 196
+        },
+        {
+          "x_local": 24,
+          "y_local": 205
+        },
+        {
+          "x_local": 15,
+          "y_local": 224
+        },
+        {
+          "x_local": 217,
+          "y_local": 234
+        },
+        {
+          "x_local": 51,
+          "y_local": 244
+        },
+        {
+          "x_local": 199,
+          "y_local": 247
+        }
+      ],
+      "note": "Typical tile - click the centre of each round vesicle. Use Z +/- to confirm faint ones."
+    },
+    {
+      "tile_id": "tile_0006",
+      "x_start": 96591,
+      "y_start": 27067,
+      "z_crop": 3145,
+      "gt_points": [
+        {
+          "x_local": 30,
+          "y_local": 3
+        },
+        {
+          "x_local": 41,
+          "y_local": 4
+        },
+        {
+          "x_local": 175,
+          "y_local": 4
+        },
+        {
+          "x_local": 231,
+          "y_local": 3
+        },
+        {
+          "x_local": 187,
+          "y_local": 8
+        },
+        {
+          "x_local": 17,
+          "y_local": 8
+        },
+        {
+          "x_local": 253,
+          "y_local": 10
+        },
+        {
+          "x_local": 223,
+          "y_local": 12
+        },
+        {
+          "x_local": 211,
+          "y_local": 12
+        },
+        {
+          "x_local": 178,
+          "y_local": 14
+        },
+        {
+          "x_local": 200,
+          "y_local": 24
+        },
+        {
+          "x_local": 173,
+          "y_local": 22
+        },
+        {
+          "x_local": 229,
+          "y_local": 22
+        },
+        {
+          "x_local": 19,
+          "y_local": 24
+        },
+        {
+          "x_local": 13,
+          "y_local": 38
+        },
+        {
+          "x_local": 25,
+          "y_local": 32
+        },
+        {
+          "x_local": 199,
+          "y_local": 36
+        },
+        {
+          "x_local": 209,
+          "y_local": 36
+        },
+        {
+          "x_local": 2,
+          "y_local": 38
+        },
+        {
+          "x_local": 192,
+          "y_local": 40
+        },
+        {
+          "x_local": 235,
+          "y_local": 40
+        },
+        {
+          "x_local": 191,
+          "y_local": 50
+        },
+        {
+          "x_local": 213,
+          "y_local": 52
+        },
+        {
+          "x_local": 202,
+          "y_local": 58
+        },
+        {
+          "x_local": 211,
+          "y_local": 58
+        },
+        {
+          "x_local": 185,
+          "y_local": 70
+        },
+        {
+          "x_local": 195,
+          "y_local": 84
+        },
+        {
+          "x_local": 49,
+          "y_local": 128
+        },
+        {
+          "x_local": 201,
+          "y_local": 128
+        },
+        {
+          "x_local": 83,
+          "y_local": 130
+        },
+        {
+          "x_local": 212,
+          "y_local": 144
+        },
+        {
+          "x_local": 149,
+          "y_local": 212
+        },
+        {
+          "x_local": 11,
+          "y_local": 32
+        },
+        {
+          "x_local": 9,
+          "y_local": 44
+        },
+        {
+          "x_local": 4,
+          "y_local": 22
+        },
+        {
+          "x_local": 1,
+          "y_local": 14
+        },
+        {
+          "x_local": 36,
+          "y_local": 33
+        },
+        {
+          "x_local": 42,
+          "y_local": 31
+        },
+        {
+          "x_local": 48,
+          "y_local": 35
+        },
+        {
+          "x_local": 39,
+          "y_local": 13
+        },
+        {
+          "x_local": 44,
+          "y_local": 24
+        },
+        {
+          "x_local": 113,
+          "y_local": 203
+        },
+        {
+          "x_local": 157,
+          "y_local": 209
+        },
+        {
+          "x_local": 19,
+          "y_local": 185
+        },
+        {
+          "x_local": 87,
+          "y_local": 126
+        },
+        {
+          "x_local": 93,
+          "y_local": 127
+        },
+        {
+          "x_local": 208,
+          "y_local": 85
+        },
+        {
+          "x_local": 203,
+          "y_local": 82
+        },
+        {
+          "x_local": 188,
+          "y_local": 57
+        },
+        {
+          "x_local": 201,
+          "y_local": 50
+        },
+        {
+          "x_local": 207,
+          "y_local": 51
+        },
+        {
+          "x_local": 223,
+          "y_local": 48
+        },
+        {
+          "x_local": 230,
+          "y_local": 48
+        },
+        {
+          "x_local": 237,
+          "y_local": 34
+        },
+        {
+          "x_local": 242,
+          "y_local": 36
+        },
+        {
+          "x_local": 230,
+          "y_local": 30
+        },
+        {
+          "x_local": 225,
+          "y_local": 38
+        },
+        {
+          "x_local": 209,
+          "y_local": 27
+        },
+        {
+          "x_local": 216,
+          "y_local": 22
+        },
+        {
+          "x_local": 230,
+          "y_local": 11
+        },
+        {
+          "x_local": 253,
+          "y_local": 19
+        },
+        {
+          "x_local": 205,
+          "y_local": 5
+        },
+        {
+          "x_local": 197,
+          "y_local": 4
+        },
+        {
+          "x_local": 191,
+          "y_local": 10
+        },
+        {
+          "x_local": 136,
+          "y_local": 222
+        },
+        {
+          "x_local": 78,
+          "y_local": 121
+        },
+        {
+          "x_local": 42,
+          "y_local": 46
+        },
+        {
+          "x_local": 29,
+          "y_local": 43
+        },
+        {
+          "x_local": 24,
+          "y_local": 2
+        }
+      ],
+      "note": "Dense bouton - many packed vesicles. Mitochondria/ER are larger and irregular: do NOT click them."
+    }
+  ]
+}

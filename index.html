@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vesicle Hunt — EM ground-truth annotation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ───────────── Login gate ───────────── -->
+<div id="login" class="overlay">
+  <div class="card">
+    <h1>🔬 Vesicle Hunt</h1>
+    <p>Help proofread synaptic vesicles in fly-brain EM. Pick a name — your progress
+       is saved under it, so you can leave and come back any time.</p>
+    <input id="username-input" maxlength="64" placeholder="your name or alias" autocomplete="off" />
+    <button id="login-btn">Start annotating</button>
+    <p class="muted" id="login-status"></p>
+    <button id="show-tutorial-from-login" class="link">How does this work? (30-second guide)</button>
+  </div>
+</div>
+
+<!-- ───────────── Tutorial / examples ───────────── -->
+<div id="tutorial" class="overlay hidden">
+  <div class="card wide">
+    <h2>How to annotate</h2>
+    <ol id="tutorial-steps">
+      <li><b>Click the centre of every synaptic vesicle</b> — small round profiles (dark
+          membrane ring, lighter inside). Click a dot again to remove it.</li>
+      <li>Only the <b>framed tile</b> counts. You can pan/zoom out for context, but click inside the frame.</li>
+      <li>Use <b>Z+ / Z−</b> to look at slices above/below to confirm faint vesicles. You annotate on the centre slice only.</li>
+      <li><b>Mitochondria, ER and membranes are NOT vesicles</b> — they are bigger and irregular. Don't click them.</li>
+      <li>Press <b>Snap back</b> (or <kbd>0</kbd>) any time to return to the default view.</li>
+    </ol>
+    <h3>Worked examples (green = real vesicles)</h3>
+    <div id="examples-grid" class="examples-grid"></div>
+    <button id="tutorial-close">Got it — let's go</button>
+  </div>
+</div>
+
+<!-- ───────────── Main app ───────────── -->
+<div id="app" class="hidden">
+  <header>
+    <div class="brand">🔬 Vesicle Hunt</div>
+    <div id="progress-pill" class="pill"></div>
+    <div class="spacer"></div>
+    <button id="tutorial-btn" class="ghost">Examples / help</button>
+    <span id="who" class="muted"></span>
+    <button id="logout-btn" class="ghost">Switch user</button>
+  </header>
+
+  <main>
+    <section id="stage">
+      <div id="banner" class="banner hidden"></div>
+      <canvas id="view" width="760" height="760"></canvas>
+      <div id="nudge" class="nudge hidden"></div>
+
+      <div class="toolbar">
+        <div class="group">
+          <button id="z-down" title="Slice below (↓)">Z−</button>
+          <span id="z-label" class="zlabel">slice 0</span>
+          <button id="z-up" title="Slice above (↑)">Z+</button>
+        </div>
+        <div class="group">
+          <button id="zoom-out" title="Zoom out (−)">－</button>
+          <button id="zoom-in" title="Zoom in (+)">＋</button>
+          <button id="snap" title="Snap back to tile (0)">⤾ Snap back</button>
+        </div>
+        <div class="group">
+          <span id="count-label" class="count">0 vesicles</span>
+          <button id="clear" class="ghost" title="Remove all my clicks">Clear</button>
+        </div>
+        <div class="group grow">
+          <button id="empty-btn" class="warn" title="No vesicles in this tile">No vesicles here</button>
+          <button id="submit-btn" class="primary" title="Submit and go to next (Enter)">Submit &amp; next →</button>
+        </div>
+      </div>
+      <p class="hint">Left-click adds a vesicle; click a dot again to remove. Drag to pan. Scroll to zoom.</p>
+    </section>
+
+    <aside id="sidebar">
+      <div class="panel">
+        <h3>🏆 Leaderboard</h3>
+        <table id="leaderboard"><thead><tr><th>#</th><th>name</th><th>vesicles</th><th>tiles</th><th>hrs</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div class="panel">
+        <h3>Your session</h3>
+        <ul class="stats">
+          <li>Tiles done: <b id="stat-tiles">0</b></li>
+          <li>Vesicles found: <b id="stat-vesicles">0</b></li>
+          <li>Time: <b id="stat-time">0m</b></li>
+        </ul>
+      </div>
+      <div class="panel muted small" id="tileinfo"></div>
+    </aside>
+  </main>
+</div>
+
+<script src="config.js"></script>
+<script src="supabase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

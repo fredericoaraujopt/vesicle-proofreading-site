@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel
+*.log
+# NOTE: public/tiles/ is intentionally committed — Vercel serves it as the static
+# tile bundle. Do not ignore it.
