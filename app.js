@@ -16,12 +16,14 @@
   const VESICLE_R_IMG = 2;
   const MARKER_MIN_PX = 2;      // display-px floor (GUI: max(2.0, ...))
   const HIT_R_IMG = 5;          // toggle-remove tolerance in IMAGE px (zoom-independent)
+  const AGREE_R_IMG = 6;        // two marks "agree" if within ~a vesicle diameter (IMAGE px)
   const $ = id => document.getElementById(id);
 
   let META = null, TILES = [], EXAMPLES = [];
   let username = null, order = [], doneSet = new Set(), idx = 0;
   let tile = null, images = [], zi = 0, points = [];
   let showVesicles = true;      // viewport vesicle markers on/off (#hide-show toggle)
+  let reviewing = false, others = [];  // post-submit reveal: others' marks + agreement
   let view = { cx: 0, cy: 0, scale: 1 };
   let startedAt = 0, viewportEvents = 0;
   let session = { tiles: 0, vesicles: 0, secs: 0 };
@@ -57,7 +59,14 @@
     order = TILES.map(t => t.tile_id);
     idx = order.findIndex(id => !doneSet.has(id));
     if (idx < 0) idx = order.length;             // everything done
-    session.tiles = doneSet.size;
+    // Restore cumulative stats (vesicles + time), not just the tile count.
+    session = { tiles: doneSet.size, vesicles: 0, secs: 0 };
+    try {
+      const s = await window.AM_DB.getUserStats(name);
+      if (s) { session.tiles = s.tiles_completed ?? doneSet.size;
+               session.vesicles = s.vesicles_found ?? 0;
+               session.secs = Math.round((s.hours_annotated ?? 0) * 3600); }
+    } catch (_) {}
     $("who").textContent = name;
     $("login").classList.add("hidden"); $("app").classList.remove("hidden");
     refreshLeaderboard(); updateStats();
@@ -69,6 +78,7 @@
     if (idx >= order.length) return finishAll();
     tile = TILES.find(t => t.tile_id === order[idx]);
     points = []; zi = META.center_index; viewportEvents = 0; startedAt = Date.now();
+    reviewing = false; others = []; clearReview();
     defaultView();
     images = new Array(META.n_slices).fill(null);
     // load centre slice first for responsiveness, then the rest
@@ -76,6 +86,18 @@
     for (let k = 0; k < META.n_slices; k++) if (k !== META.center_index) loadSlice(k);
     updateProgress(); updateBanner(); updateCount();
     $("tileinfo").innerHTML = `tile <b>${tile.tile_id}</b> · ${tile.category} · ${tile.kind}`;
+    // Revisiting a tile you already submitted: show your saved marks again.
+    if (doneSet.has(tile.tile_id)) {
+      const tid = tile.tile_id;
+      window.AM_DB.getTileAnnotations(tid).then(all => {
+        if (!tile || tile.tile_id !== tid) return;                 // user navigated away
+        const mine = all.find(a => a.username === username);
+        if (mine && mine.points && mine.points.length) {
+          points = mine.points.map(p => ({ x_local: p.x_local, y_local: p.y_local }));
+          updateCount(); draw();
+        }
+      }).catch(() => {});
+    }
   }
   function loadSlice(k, cb) {
     const im = new Image();
@@ -137,6 +159,16 @@
     drawPoints();
   }
   function drawPoints() {
+    // During the post-submit reveal, show OTHER annotators' clicks as cyan dots
+    // (overlap = where people agree). Drawn under your own red rings.
+    if (reviewing && others.length) {
+      const rr = Math.max(2, VESICLE_R_IMG * view.scale * 0.85);
+      ctx.fillStyle = "rgba(45,200,255,0.45)";
+      for (const set of others) for (const p of set) {
+        const [sx, sy] = img2scr(META.center_offset + p.x_local, META.center_offset + p.y_local);
+        ctx.beginPath(); ctx.arc(sx, sy, rr, 0, 7); ctx.fill();
+      }
+    }
     if (!showVesicles) return;
     const onCentre = zi === META.center_index;
     const r = Math.max(MARKER_MIN_PX, VESICLE_R_IMG * view.scale);   // scales with magnification ~ vesicle size
@@ -177,7 +209,7 @@
     $("prev-btn").onclick = prevTile;
     $("next-btn").onclick = nextTile;
     $("empty-btn").onclick = () => submit(true);
-    $("submit-btn").onclick = () => submit(false);
+    $("submit-btn").onclick = submitOrNext;
 
     // help lives in one place: a collapsible panel in the sidebar (below the leaderboard)
     $("help-examples").onclick = () => $("tutorial").classList.remove("hidden");
@@ -193,6 +225,7 @@
   function nextTile() { if (idx < order.length) { idx += 1; loadTile(); } }
 
   function handleClick(e) {
+    if (reviewing) return nudge("Already submitted — press → / Next for the next tile.");
     if (zi !== META.center_index) return nudge("You can only annotate on the centre slice — press 0 / Snap back.");
     const [ix, iy] = evtImg(e);
     const xl = ix - META.center_offset, yl = iy - META.center_offset;
@@ -240,7 +273,7 @@
         case "-": case "_": zoomCentre(1 / 1.3); break;
         case "0": snapBack(); break;
         case "h": case "H": toggleVesicles(); break;
-        case "Enter": submit(false); break;
+        case "Enter": submitOrNext(); break;
         case "e": case "E": submit(true); break;
       }
     });
@@ -275,8 +308,9 @@
     const tb = $("leaderboard").querySelector("tbody"); tb.innerHTML = "";
     rows.forEach((r, i) => {
       const tr = document.createElement("tr"); if (r.username === username) tr.className = "me";
+      const mins = Math.round((r.hours_annotated ?? 0) * 60);
       tr.innerHTML = `<td>${i + 1}</td><td>${escapeHtml(r.username)}</td><td>${r.vesicles_found}</td>`
-        + `<td>${r.tiles_completed}</td><td>${r.hours_annotated ?? "-"}</td>`;
+        + `<td>${r.tiles_completed}</td><td>${mins}m</td>`;
       tb.appendChild(tr);
     });
   }
@@ -308,10 +342,65 @@
     }
     clearSaveError();
     $("submit-btn").disabled = false;
+    const firstTime = !doneSet.has(tile.tile_id);
     doneSet.add(tile.tile_id);
-    session.tiles += 1; session.vesicles += row.n_points; session.secs += row.duration_s;
+    if (firstTime) session.tiles += 1;
+    session.vesicles += row.n_points; session.secs += row.duration_s;
     updateStats(); refreshLeaderboard();
-    idx += 1; loadTile();
+    await enterReview(pts);                       // reveal: agreement score + others' marks
+  }
+
+  function submitOrNext() { if (reviewing) nextTile(); else submit(false); }
+
+  // ── agreement (mean pairwise F1 vs other annotators on the same tile) ──
+  function matchF1(A, B, r) {
+    if (!A.length && !B.length) return 1;
+    if (!A.length || !B.length) return 0;
+    const used = new Array(B.length).fill(false); let tp = 0;
+    for (const a of A) {
+      let best = -1, bd = r * r;
+      for (let j = 0; j < B.length; j++) {
+        if (used[j]) continue;
+        const d = (a.x_local - B[j].x_local) ** 2 + (a.y_local - B[j].y_local) ** 2;
+        if (d <= bd) { bd = d; best = j; }
+      }
+      if (best >= 0) { used[best] = true; tp++; }
+    }
+    const prec = tp / B.length, rec = tp / A.length;
+    return (prec + rec) ? 2 * prec * rec / (prec + rec) : 0;
+  }
+  function computeAgreement(my, sets, r) {
+    if (!sets.length) return null;
+    return sets.map(s => matchF1(my, s, r)).reduce((a, b) => a + b, 0) / sets.length;
+  }
+  async function enterReview(myPts) {
+    reviewing = true;
+    let all = [];
+    try { all = await window.AM_DB.getTileAnnotations(tile.tile_id); } catch (_) {}
+    others = all.filter(a => a.username !== username && !String(a.username || "").startsWith("__"))
+                .map(a => a.points || []);
+    showReview(computeAgreement(myPts, others, AGREE_R_IMG), others.length);
+    draw();
+  }
+  function showReview(ag, n) {
+    const el = $("review");
+    if (n === 0) {
+      el.textContent = "🥇 You're the first to do this tile — you set the benchmark!";
+    } else {
+      const pct = Math.round(ag * 100);
+      const tier = pct >= 90 ? "🔥 in sync" : pct >= 75 ? "👍 strong agreement"
+                 : pct >= 50 ? "🤔 some disagreement" : "🌀 divergent — tricky tile";
+      el.innerHTML = `🎯 <b>${pct}% agreement</b> with ${n} annotator${n > 1 ? "s" : ""} · ${tier}`
+                   + ` &nbsp;—&nbsp; <span style="color:#2dc8ff">cyan = others</span>, <span style="color:#ff4d6d">red = you</span>`;
+    }
+    el.classList.remove("hidden");
+    const b = $("submit-btn"); b.textContent = "Next →"; b.title = "Next tile (→)";
+    $("empty-btn").disabled = true;
+  }
+  function clearReview() {
+    const el = $("review"); if (el) el.classList.add("hidden");
+    const b = $("submit-btn"); if (b) { b.textContent = "Submit & next →"; b.title = "Save annotation and load the next tile (Enter)"; }
+    const eb = $("empty-btn"); if (eb) eb.disabled = false;
   }
 
   // ───────────────────────── examples (tutorial) ─────────────────────────

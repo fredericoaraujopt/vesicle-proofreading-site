@@ -35,6 +35,28 @@
     return (await r.json()).map(x => x.tile_id);
   }
 
+  // Cumulative stats for one user (to restore the session panel on login).
+  async function getUserStats(username) {
+    const lb = await getLeaderboard(9999);
+    return lb.find(u => u.username === username) || null;
+  }
+
+  // Per-tile annotations from ALL users (latest per user) — for the agreement score
+  // and the "see what others marked" overlay. Returns [{username, points, n_points}].
+  async function getTileAnnotations(tileId) {
+    if (!ONLINE) {
+      const latest = {};
+      for (const s of loadLocal()) if (s.tile_id === tileId) latest[s.username] = s;
+      return Object.values(latest).map(s => ({ username: s.username,
+        points: typeof s.points === "string" ? JSON.parse(s.points || "[]") : (s.points || []), n_points: s.n_points || 0 }));
+    }
+    const q = "?tile_id=eq." + encodeURIComponent(tileId) + "&select=username,points,n_points";
+    const r = await fetch(URL + "/rest/v1/tile_annotations" + q, { headers: headers() });
+    if (!r.ok) return [];   // view not created yet -> feature degrades gracefully
+    return (await r.json()).map(a => ({ username: a.username,
+      points: typeof a.points === "string" ? JSON.parse(a.points || "[]") : (a.points || []), n_points: a.n_points || 0 }));
+  }
+
   async function getLeaderboard(limit) {
     if (!ONLINE) {
       const by = {};
@@ -64,5 +86,6 @@
   }
   function URL_OBJ(text) { return "data:text/csv;charset=utf-8," + encodeURIComponent(text); }
 
-  window.AM_DB = { ONLINE, insertSubmission, getUserTilesDone, getLeaderboard, exportOfflineCSV };
+  window.AM_DB = { ONLINE, insertSubmission, getUserTilesDone, getUserStats,
+    getTileAnnotations, getLeaderboard, exportOfflineCSV };
 })();
