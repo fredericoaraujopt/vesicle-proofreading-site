@@ -39,6 +39,7 @@
     if (!ONLINE) {
       const by = {};
       for (const s of loadLocal()) {
+        if (String(s.username || "").startsWith("__")) continue;   // hide diagnostic/test users
         const u = (by[s.username] = by[s.username] || { username: s.username, vesicles_found: 0, tiles: new Set(), secs: 0 });
         u.vesicles_found += s.n_points || 0; u.tiles.add(s.tile_id); u.secs += s.duration_s || 0;
       }
@@ -46,10 +47,10 @@
         tiles_completed: u.tiles.size, hours_annotated: +(u.secs / 3600).toFixed(2) }))
         .sort((a, b) => b.vesicles_found - a.vesicles_found).slice(0, limit || 20);
     }
-    const q = "?select=*&order=vesicles_found.desc,tiles_completed.desc&limit=" + (limit || 20);
+    const q = "?select=*&order=vesicles_found.desc,tiles_completed.desc&limit=" + (limit || 50);
     const r = await fetch(URL + "/rest/v1/leaderboard" + q, { headers: headers() });
     if (!r.ok) return [];
-    return await r.json();
+    return (await r.json()).filter(x => !String(x.username || "").startsWith("__")).slice(0, limit || 20);
   }
 
   function exportOfflineCSV() {

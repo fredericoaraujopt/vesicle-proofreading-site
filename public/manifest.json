@@ -92,12 +92,12 @@
       "z_crop": 2477
     },
     {
-      "tile_id": "tile_0013",
+      "tile_id": "tile_0020",
       "category": "anchor_gt",
       "kind": "anchor",
       "x_start": 64928,
       "y_start": 16521,
-      "z_crop": 655
+      "z_crop": 660
     },
     {
       "tile_id": "tile_0007",
@@ -148,12 +148,12 @@
       "z_crop": 2481
     },
     {
-      "tile_id": "tile_0020",
+      "tile_id": "tile_0027",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 64928,
-      "y_start": 16521,
-      "z_crop": 660
+      "x_start": 68108,
+      "y_start": 24006,
+      "z_crop": 1604
     },
     {
       "tile_id": "tile_0014",
@@ -204,12 +204,12 @@
       "z_crop": 2484
     },
     {
-      "tile_id": "tile_0027",
+      "tile_id": "tile_0034",
       "category": "anchor_gt",
       "kind": "anchor",
       "x_start": 68108,
       "y_start": 24006,
-      "z_crop": 1604
+      "z_crop": 1607
     },
     {
       "tile_id": "tile_0021",
@@ -260,12 +260,12 @@
       "z_crop": 2485
     },
     {
-      "tile_id": "tile_0034",
+      "tile_id": "tile_0041",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 68108,
-      "y_start": 24006,
-      "z_crop": 1607
+      "x_start": 77063,
+      "y_start": 26967,
+      "z_crop": 2196
     },
     {
       "tile_id": "tile_0028",
@@ -316,12 +316,12 @@
       "z_crop": 2488
     },
     {
-      "tile_id": "tile_0041",
+      "tile_id": "tile_0048",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 77063,
-      "y_start": 26967,
-      "z_crop": 2196
+      "x_start": 68281,
+      "y_start": 15857,
+      "z_crop": 2396
     },
     {
       "tile_id": "tile_0035",
@@ -372,12 +372,12 @@
       "z_crop": 2490
     },
     {
-      "tile_id": "tile_0048",
+      "tile_id": "tile_0055",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 68281,
-      "y_start": 15857,
-      "z_crop": 2396
+      "x_start": 92722,
+      "y_start": 35676,
+      "z_crop": 3118
     },
     {
       "tile_id": "tile_0042",
@@ -428,12 +428,12 @@
       "z_crop": 2511
     },
     {
-      "tile_id": "tile_0055",
+      "tile_id": "tile_0062",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 92722,
-      "y_start": 35676,
-      "z_crop": 3118
+      "x_start": 101627,
+      "y_start": 30079,
+      "z_crop": 3246
     },
     {
       "tile_id": "tile_0049",
@@ -484,12 +484,12 @@
       "z_crop": 2516
     },
     {
-      "tile_id": "tile_0062",
+      "tile_id": "tile_0069",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 101627,
-      "y_start": 30079,
-      "z_crop": 3246
+      "x_start": 77076,
+      "y_start": 12852,
+      "z_crop": 3277
     },
     {
       "tile_id": "tile_0056",
@@ -540,12 +540,12 @@
       "z_crop": 2527
     },
     {
-      "tile_id": "tile_0069",
+      "tile_id": "tile_0076",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 77076,
-      "y_start": 12852,
-      "z_crop": 3277
+      "x_start": 71564,
+      "y_start": 15856,
+      "z_crop": 3429
     },
     {
       "tile_id": "tile_0063",
@@ -596,12 +596,12 @@
       "z_crop": 2553
     },
     {
-      "tile_id": "tile_0076",
+      "tile_id": "tile_0083",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 71564,
-      "y_start": 15856,
-      "z_crop": 3429
+      "x_start": 48583,
+      "y_start": 12448,
+      "z_crop": 3440
     },
     {
       "tile_id": "tile_0070",
@@ -652,12 +652,12 @@
       "z_crop": 2554
     },
     {
-      "tile_id": "tile_0083",
+      "tile_id": "tile_0090",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 48583,
-      "y_start": 12448,
-      "z_crop": 3440
+      "x_start": 50886,
+      "y_start": 21129,
+      "z_crop": 3603
     },
     {
       "tile_id": "tile_0077",
@@ -708,12 +708,12 @@
       "z_crop": 3844
     },
     {
-      "tile_id": "tile_0090",
+      "tile_id": "tile_0097",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 50886,
-      "y_start": 21129,
-      "z_crop": 3603
+      "x_start": 88623,
+      "y_start": 41539,
+      "z_crop": 3911
     },
     {
       "tile_id": "tile_0084",
@@ -764,12 +764,12 @@
       "z_crop": 3845
     },
     {
-      "tile_id": "tile_0097",
+      "tile_id": "tile_0104",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 88623,
-      "y_start": 41539,
-      "z_crop": 3911
+      "x_start": 68328,
+      "y_start": 20855,
+      "z_crop": 3987
     },
     {
       "tile_id": "tile_0091",
@@ -820,12 +820,12 @@
       "z_crop": 3848
     },
     {
-      "tile_id": "tile_0104",
+      "tile_id": "tile_0111",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 68328,
-      "y_start": 20855,
-      "z_crop": 3987
+      "x_start": 46564,
+      "y_start": 22893,
+      "z_crop": 4205
     },
     {
       "tile_id": "tile_0098",
@@ -876,12 +876,12 @@
       "z_crop": 3856
     },
     {
-      "tile_id": "tile_0111",
+      "tile_id": "tile_0118",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 46564,
-      "y_start": 22893,
-      "z_crop": 4205
+      "x_start": 23449,
+      "y_start": 22986,
+      "z_crop": 4331
     },
     {
       "tile_id": "tile_0105",
@@ -932,12 +932,12 @@
       "z_crop": 3860
     },
     {
-      "tile_id": "tile_0118",
+      "tile_id": "tile_0132",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 23449,
-      "y_start": 22986,
-      "z_crop": 4331
+      "x_start": 45171,
+      "y_start": 31577,
+      "z_crop": 4673
     },
     {
       "tile_id": "tile_0112",
@@ -2108,133 +2108,12 @@
       "note": "The large oval organelles with internal texture are mitochondria \u2014 NOT vesicles. Notice the rings sit only on the small round vesicles."
     },
     {
-      "tile_id": "tile_0132",
-      "x_start": 45171,
-      "y_start": 31577,
-      "z_crop": 4673,
-      "gt_points": [
-        {
-          "x_local": 248,
-          "y_local": 13
-        },
-        {
-          "x_local": 135,
-          "y_local": 43
-        },
-        {
-          "x_local": 229,
-          "y_local": 47
-        },
-        {
-          "x_local": 238,
-          "y_local": 48
-        },
-        {
-          "x_local": 233,
-          "y_local": 49
-        },
-        {
-          "x_local": 237,
-          "y_local": 54
-        },
-        {
-          "x_local": 225,
-          "y_local": 53
-        },
-        {
-          "x_local": 229,
-          "y_local": 57
-        },
-        {
-          "x_local": 253,
-          "y_local": 58
-        },
-        {
-          "x_local": 253,
-          "y_local": 61
-        },
-        {
-          "x_local": 230,
-          "y_local": 64
-        },
-        {
-          "x_local": 222,
-          "y_local": 67
-        },
-        {
-          "x_local": 170,
-          "y_local": 72
-        },
-        {
-          "x_local": 170,
-          "y_local": 78
-        },
-        {
-          "x_local": 168,
-          "y_local": 115
-        },
-        {
-          "x_local": 170,
-          "y_local": 125
-        },
-        {
-          "x_local": 154,
-          "y_local": 130
-        },
-        {
-          "x_local": 71,
-          "y_local": 137
-        },
-        {
-          "x_local": 157,
-          "y_local": 140
-        },
-        {
-          "x_local": 170,
-          "y_local": 139
-        },
-        {
-          "x_local": 50,
-          "y_local": 149
-        },
-        {
-          "x_local": 247,
-          "y_local": 155
-        },
-        {
-          "x_local": 240,
-          "y_local": 158
-        },
-        {
-          "x_local": 189,
-          "y_local": 161
-        },
-        {
-          "x_local": 183,
-          "y_local": 163
-        },
-        {
-          "x_local": 199,
-          "y_local": 169
-        },
-        {
-          "x_local": 206,
-          "y_local": 170
-        },
-        {
-          "x_local": 187,
-          "y_local": 174
-        },
-        {
-          "x_local": 222,
-          "y_local": 190
-        },
-        {
-          "x_local": 173,
-          "y_local": 230
-        }
-      ],
-      "note": "\u26a0 A vesicle marker landed on this mitochondrion \u2014 a false positive. Mitochondria, ER and membranes are not vesicles: don't click them."
+      "tile_id": "tile_0013",
+      "x_start": 64928,
+      "y_start": 16521,
+      "z_crop": 655,
+      "gt_points": [],
+      "note": "Some tiles are biological tissue with NO vesicles, like this one. When that happens, click 'No vesicles here' and submit \u2014 don't invent vesicles."
     }
   ]
 }

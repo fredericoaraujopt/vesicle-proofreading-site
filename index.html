@@ -29,11 +29,14 @@
       <li><b>Click the centre of every synaptic vesicle</b> — small round profiles (dark
           membrane ring, lighter inside). Click a dot again to remove it.</li>
       <li>Only the <b>framed tile</b> counts. You can pan/zoom out for context, but click inside the frame.</li>
-      <li>Use <b>Z+ / Z−</b> to look at slices above/below to confirm faint vesicles. You annotate on the centre slice only.</li>
-      <li><b>Mitochondria, ER and membranes are NOT vesicles</b> — they are bigger and irregular. Don't click them.</li>
-      <li>Press <b>Snap back</b> (or <kbd>0</kbd>) any time to return to the default view.</li>
+      <li><b>Move up/down sections</b> (<kbd>Shift</kbd>/<kbd>Ctrl</kbd>+scroll or <kbd>↑</kbd>/<kbd>↓</kbd>) to check whether a
+          profile <b>continues into the adjacent z-plane</b> — that tells you a vesicle spans two sections. You still annotate on the centre slice only.</li>
+      <li><b>Mitochondria, ER and membranes are NOT vesicles</b> — they are larger and irregular.
+          Also <b>do NOT annotate dense-core vesicles</b>: they resemble synaptic vesicles but are larger and have a dark dense core. Don't click any of these.</li>
+      <li>If a tile has <b>no vesicles</b>, use <b>No vesicles here</b> — don't invent any.
+          Press <b>Snap back</b> (or <kbd>0</kbd>) any time to return to the default view.</li>
     </ol>
-    <h3>Worked examples — from the ground truth (green rings = real vesicles)</h3>
+    <h3>Worked examples (green rings = real vesicles)</h3>
     <p class="muted small">Toggle the markers off to see the raw EM, then back on to learn exactly what counts.
        Marker size ≈ a real vesicle.</p>
     <button id="toggle-example-ves" class="ghost">👁 Hide vesicles (see raw EM)</button>
@@ -83,9 +86,6 @@
         </div>
       </div>
       <p id="savemsg" class="savemsg hidden"></p>
-      <p class="hint">Left-click adds a vesicle (markers scale with zoom ≈ true vesicle size); click a dot again to remove.
-        <b>Scroll = zoom</b>, drag = pan, <kbd>Shift</kbd>/<kbd>Ctrl</kbd>+scroll or <kbd>↑</kbd>/<kbd>↓</kbd> = move section,
-        <kbd>←</kbd>/<kbd>→</kbd> = prev/next tile, <kbd>h</kbd> = show/hide. <b>Submit &amp; next</b> (or <kbd>Enter</kbd>) saves.</p>
     </section>
 
     <aside id="sidebar">
@@ -100,12 +100,12 @@
           <li><b>Scroll</b> — zoom in / out</li>
           <li><kbd>Shift</kbd>/<kbd>Ctrl</kbd>+scroll (or <kbd>↑</kbd>/<kbd>↓</kbd>) — move section (Z)</li>
           <li><kbd>←</kbd>/<kbd>→</kbd> — previous / next tile</li>
+          <li><kbd>h</kbd> — show / hide vesicles</li>
           <li><b>Drag</b> — pan &nbsp;·&nbsp; <kbd>0</kbd> — snap back to the tile</li>
           <li><b>Submit &amp; next</b> / <kbd>Enter</kbd> — save &amp; load the next tile</li>
         </ul>
         <p class="muted small">Only the framed centre tile is annotated. Mitochondria &amp; ER are larger, irregular organelles — not vesicles.</p>
-        <button id="help-toggle-ves" class="ghost">👁 Hide vesicles</button>
-        <button id="help-examples" class="ghost">📖 Worked examples</button>
+        <button id="help-examples" class="ghost">📖 How to annotate</button>
       </details>
       <div class="panel">
         <h3>Your session</h3>

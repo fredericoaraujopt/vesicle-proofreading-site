@@ -46,8 +46,11 @@
   }
 
   async function doLogin() {
-    const name = $("username-input").value.trim();
-    if (!name) { $("login-status").textContent = "Please enter a name."; return; }
+    const raw = $("username-input").value.trim();
+    if (!raw) { $("login-status").textContent = "Please enter a name."; return; }
+    // Canonical username: case- and whitespace-insensitive, so re-logging in always
+    // matches your earlier work (e.g. "Fred", "fred ", "FRED" → "fred").
+    const name = raw.toLowerCase().replace(/\s+/g, " ");
     username = name; localStorage.setItem("am_username", name);
     $("login-status").textContent = "Loading your progress…";
     try { doneSet = new Set(await window.AM_DB.getUserTilesDone(name)); } catch (_) { doneSet = new Set(); }
@@ -177,15 +180,12 @@
     $("submit-btn").onclick = () => submit(false);
 
     // help lives in one place: a collapsible panel in the sidebar (below the leaderboard)
-    $("help-toggle-ves").onclick = toggleVesicles;
     $("help-examples").onclick = () => $("tutorial").classList.remove("hidden");
   }
 
   function toggleVesicles() {
     showVesicles = !showVesicles;
-    const label = showVesicles ? "👁 Hide vesicles" : "👁 Show vesicles";
-    $("toggle-ves").textContent = label;
-    const h = $("help-toggle-ves"); if (h) h.textContent = label;   // keep help-drawer copy in sync
+    $("toggle-ves").textContent = showVesicles ? "👁 Hide vesicles" : "👁 Show vesicles";
     draw();
   }
   // Sequence navigation WITHOUT saving (Submit & next is the saving path).
