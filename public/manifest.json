@@ -12,12 +12,12 @@
   },
   "tiles": [
     {
-      "tile_id": "tile_0000",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0002",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100916,
-      "y_start": 43210,
-      "z_crop": 4925
+      "x_start": 37036,
+      "y_start": 19975,
+      "z_crop": 4343
     },
     {
       "tile_id": "tile_0001",
@@ -28,20 +28,28 @@
       "z_crop": 198
     },
     {
-      "tile_id": "tile_0002",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37036,
-      "y_start": 19975,
-      "z_crop": 4343
-    },
-    {
       "tile_id": "tile_0003",
       "category": "background",
       "kind": "fresh",
       "x_start": 43603,
       "y_start": 23183,
       "z_crop": 2476
+    },
+    {
+      "tile_id": "tile_0006",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 71874,
+      "y_start": 41350,
+      "z_crop": 273
+    },
+    {
+      "tile_id": "tile_0000",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100916,
+      "y_start": 43210,
+      "z_crop": 4925
     },
     {
       "tile_id": "tile_0004",
@@ -60,20 +68,12 @@
       "z_crop": 5127
     },
     {
-      "tile_id": "tile_0006",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 71874,
-      "y_start": 41350,
-      "z_crop": 273
-    },
-    {
-      "tile_id": "tile_0007",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0009",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100954,
-      "y_start": 43075,
-      "z_crop": 4925
+      "x_start": 37147,
+      "y_start": 19801,
+      "z_crop": 4343
     },
     {
       "tile_id": "tile_0008",
@@ -84,20 +84,28 @@
       "z_crop": 239
     },
     {
-      "tile_id": "tile_0009",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37147,
-      "y_start": 19801,
-      "z_crop": 4343
-    },
-    {
       "tile_id": "tile_0010",
       "category": "background",
       "kind": "fresh",
       "x_start": 42453,
       "y_start": 23840,
       "z_crop": 2477
+    },
+    {
+      "tile_id": "tile_0013",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 64928,
+      "y_start": 16521,
+      "z_crop": 655
+    },
+    {
+      "tile_id": "tile_0007",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100954,
+      "y_start": 43075,
+      "z_crop": 4925
     },
     {
       "tile_id": "tile_0011",
@@ -116,20 +124,12 @@
       "z_crop": 5127
     },
     {
-      "tile_id": "tile_0013",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 64928,
-      "y_start": 16521,
-      "z_crop": 655
-    },
-    {
-      "tile_id": "tile_0014",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0016",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 99091,
-      "y_start": 41422,
-      "z_crop": 5124
+      "x_start": 40645,
+      "y_start": 17675,
+      "z_crop": 4343
     },
     {
       "tile_id": "tile_0015",
@@ -140,20 +140,28 @@
       "z_crop": 253
     },
     {
-      "tile_id": "tile_0016",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40645,
-      "y_start": 17675,
-      "z_crop": 4343
-    },
-    {
       "tile_id": "tile_0017",
       "category": "background",
       "kind": "fresh",
       "x_start": 43457,
       "y_start": 23706,
       "z_crop": 2481
+    },
+    {
+      "tile_id": "tile_0020",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 64928,
+      "y_start": 16521,
+      "z_crop": 660
+    },
+    {
+      "tile_id": "tile_0014",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99091,
+      "y_start": 41422,
+      "z_crop": 5124
     },
     {
       "tile_id": "tile_0018",
@@ -172,20 +180,12 @@
       "z_crop": 5129
     },
     {
-      "tile_id": "tile_0020",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 64928,
-      "y_start": 16521,
-      "z_crop": 660
-    },
-    {
-      "tile_id": "tile_0021",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0023",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 99117,
-      "y_start": 41553,
-      "z_crop": 5124
+      "x_start": 40683,
+      "y_start": 17524,
+      "z_crop": 4343
     },
     {
       "tile_id": "tile_0022",
@@ -196,20 +196,28 @@
       "z_crop": 406
     },
     {
-      "tile_id": "tile_0023",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40683,
-      "y_start": 17524,
-      "z_crop": 4343
-    },
-    {
       "tile_id": "tile_0024",
       "category": "background",
       "kind": "fresh",
       "x_start": 43445,
       "y_start": 21468,
       "z_crop": 2484
+    },
+    {
+      "tile_id": "tile_0027",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68108,
+      "y_start": 24006,
+      "z_crop": 1604
+    },
+    {
+      "tile_id": "tile_0021",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99117,
+      "y_start": 41553,
+      "z_crop": 5124
     },
     {
       "tile_id": "tile_0025",
@@ -228,20 +236,12 @@
       "z_crop": 5130
     },
     {
-      "tile_id": "tile_0027",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 68108,
-      "y_start": 24006,
-      "z_crop": 1604
-    },
-    {
-      "tile_id": "tile_0028",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0030",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 99339,
-      "y_start": 44000,
-      "z_crop": 5124
+      "x_start": 37208,
+      "y_start": 20125,
+      "z_crop": 4345
     },
     {
       "tile_id": "tile_0029",
@@ -252,20 +252,28 @@
       "z_crop": 473
     },
     {
-      "tile_id": "tile_0030",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37208,
-      "y_start": 20125,
-      "z_crop": 4345
-    },
-    {
       "tile_id": "tile_0031",
       "category": "background",
       "kind": "fresh",
       "x_start": 42433,
       "y_start": 22249,
       "z_crop": 2485
+    },
+    {
+      "tile_id": "tile_0034",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68108,
+      "y_start": 24006,
+      "z_crop": 1607
+    },
+    {
+      "tile_id": "tile_0028",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99339,
+      "y_start": 44000,
+      "z_crop": 5124
     },
     {
       "tile_id": "tile_0032",
@@ -284,20 +292,12 @@
       "z_crop": 5132
     },
     {
-      "tile_id": "tile_0034",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 68108,
-      "y_start": 24006,
-      "z_crop": 1607
-    },
-    {
-      "tile_id": "tile_0035",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0037",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 99368,
-      "y_start": 44173,
-      "z_crop": 5124
+      "x_start": 37405,
+      "y_start": 19772,
+      "z_crop": 4345
     },
     {
       "tile_id": "tile_0036",
@@ -308,20 +308,28 @@
       "z_crop": 474
     },
     {
-      "tile_id": "tile_0037",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37405,
-      "y_start": 19772,
-      "z_crop": 4345
-    },
-    {
       "tile_id": "tile_0038",
       "category": "background",
       "kind": "fresh",
       "x_start": 43535,
       "y_start": 22498,
       "z_crop": 2488
+    },
+    {
+      "tile_id": "tile_0041",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 77063,
+      "y_start": 26967,
+      "z_crop": 2196
+    },
+    {
+      "tile_id": "tile_0035",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99368,
+      "y_start": 44173,
+      "z_crop": 5124
     },
     {
       "tile_id": "tile_0039",
@@ -340,20 +348,12 @@
       "z_crop": 5144
     },
     {
-      "tile_id": "tile_0041",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 77063,
-      "y_start": 26967,
-      "z_crop": 2196
-    },
-    {
-      "tile_id": "tile_0042",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0044",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100257,
-      "y_start": 43989,
-      "z_crop": 5124
+      "x_start": 37990,
+      "y_start": 20037,
+      "z_crop": 4345
     },
     {
       "tile_id": "tile_0043",
@@ -364,20 +364,28 @@
       "z_crop": 475
     },
     {
-      "tile_id": "tile_0044",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37990,
-      "y_start": 20037,
-      "z_crop": 4345
-    },
-    {
       "tile_id": "tile_0045",
       "category": "background",
       "kind": "fresh",
       "x_start": 43323,
       "y_start": 23413,
       "z_crop": 2490
+    },
+    {
+      "tile_id": "tile_0048",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68281,
+      "y_start": 15857,
+      "z_crop": 2396
+    },
+    {
+      "tile_id": "tile_0042",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100257,
+      "y_start": 43989,
+      "z_crop": 5124
     },
     {
       "tile_id": "tile_0046",
@@ -396,20 +404,12 @@
       "z_crop": 5149
     },
     {
-      "tile_id": "tile_0048",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 68281,
-      "y_start": 15857,
-      "z_crop": 2396
-    },
-    {
-      "tile_id": "tile_0049",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0051",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 101459,
-      "y_start": 42802,
-      "z_crop": 5124
+      "x_start": 40606,
+      "y_start": 17795,
+      "z_crop": 4345
     },
     {
       "tile_id": "tile_0050",
@@ -420,20 +420,28 @@
       "z_crop": 1152
     },
     {
-      "tile_id": "tile_0051",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40606,
-      "y_start": 17795,
-      "z_crop": 4345
-    },
-    {
       "tile_id": "tile_0052",
       "category": "background",
       "kind": "fresh",
       "x_start": 42977,
       "y_start": 21921,
       "z_crop": 2511
+    },
+    {
+      "tile_id": "tile_0055",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 92722,
+      "y_start": 35676,
+      "z_crop": 3118
+    },
+    {
+      "tile_id": "tile_0049",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101459,
+      "y_start": 42802,
+      "z_crop": 5124
     },
     {
       "tile_id": "tile_0053",
@@ -452,20 +460,12 @@
       "z_crop": 5153
     },
     {
-      "tile_id": "tile_0055",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 92722,
-      "y_start": 35676,
-      "z_crop": 3118
-    },
-    {
-      "tile_id": "tile_0056",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0058",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 99102,
-      "y_start": 41401,
-      "z_crop": 5126
+      "x_start": 40734,
+      "y_start": 18395,
+      "z_crop": 4345
     },
     {
       "tile_id": "tile_0057",
@@ -476,20 +476,28 @@
       "z_crop": 1283
     },
     {
-      "tile_id": "tile_0058",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40734,
-      "y_start": 18395,
-      "z_crop": 4345
-    },
-    {
       "tile_id": "tile_0059",
       "category": "background",
       "kind": "fresh",
       "x_start": 43730,
       "y_start": 23726,
       "z_crop": 2516
+    },
+    {
+      "tile_id": "tile_0062",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 101627,
+      "y_start": 30079,
+      "z_crop": 3246
+    },
+    {
+      "tile_id": "tile_0056",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99102,
+      "y_start": 41401,
+      "z_crop": 5126
     },
     {
       "tile_id": "tile_0060",
@@ -508,20 +516,12 @@
       "z_crop": 5161
     },
     {
-      "tile_id": "tile_0062",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 101627,
-      "y_start": 30079,
-      "z_crop": 3246
-    },
-    {
-      "tile_id": "tile_0063",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0065",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 99111,
-      "y_start": 41559,
-      "z_crop": 5126
+      "x_start": 40775,
+      "y_start": 18230,
+      "z_crop": 4345
     },
     {
       "tile_id": "tile_0064",
@@ -532,20 +532,28 @@
       "z_crop": 1367
     },
     {
-      "tile_id": "tile_0065",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40775,
-      "y_start": 18230,
-      "z_crop": 4345
-    },
-    {
       "tile_id": "tile_0066",
       "category": "background",
       "kind": "fresh",
       "x_start": 44726,
       "y_start": 21937,
       "z_crop": 2527
+    },
+    {
+      "tile_id": "tile_0069",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 77076,
+      "y_start": 12852,
+      "z_crop": 3277
+    },
+    {
+      "tile_id": "tile_0063",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 99111,
+      "y_start": 41559,
+      "z_crop": 5126
     },
     {
       "tile_id": "tile_0067",
@@ -564,20 +572,12 @@
       "z_crop": 5163
     },
     {
-      "tile_id": "tile_0069",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 77076,
-      "y_start": 12852,
-      "z_crop": 3277
-    },
-    {
-      "tile_id": "tile_0070",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0072",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100199,
-      "y_start": 44168,
-      "z_crop": 5126
+      "x_start": 37191,
+      "y_start": 20105,
+      "z_crop": 4347
     },
     {
       "tile_id": "tile_0071",
@@ -588,20 +588,28 @@
       "z_crop": 1401
     },
     {
-      "tile_id": "tile_0072",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37191,
-      "y_start": 20105,
-      "z_crop": 4347
-    },
-    {
       "tile_id": "tile_0073",
       "category": "background",
       "kind": "fresh",
       "x_start": 42583,
       "y_start": 22028,
       "z_crop": 2553
+    },
+    {
+      "tile_id": "tile_0076",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 71564,
+      "y_start": 15856,
+      "z_crop": 3429
+    },
+    {
+      "tile_id": "tile_0070",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100199,
+      "y_start": 44168,
+      "z_crop": 5126
     },
     {
       "tile_id": "tile_0074",
@@ -620,20 +628,12 @@
       "z_crop": 5175
     },
     {
-      "tile_id": "tile_0076",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 71564,
-      "y_start": 15856,
-      "z_crop": 3429
-    },
-    {
-      "tile_id": "tile_0077",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0079",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100283,
-      "y_start": 44032,
-      "z_crop": 5126
+      "x_start": 37429,
+      "y_start": 19821,
+      "z_crop": 4347
     },
     {
       "tile_id": "tile_0078",
@@ -644,20 +644,28 @@
       "z_crop": 1420
     },
     {
-      "tile_id": "tile_0079",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37429,
-      "y_start": 19821,
-      "z_crop": 4347
-    },
-    {
       "tile_id": "tile_0080",
       "category": "background",
       "kind": "fresh",
       "x_start": 41478,
       "y_start": 22702,
       "z_crop": 2554
+    },
+    {
+      "tile_id": "tile_0083",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 48583,
+      "y_start": 12448,
+      "z_crop": 3440
+    },
+    {
+      "tile_id": "tile_0077",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100283,
+      "y_start": 44032,
+      "z_crop": 5126
     },
     {
       "tile_id": "tile_0081",
@@ -676,20 +684,12 @@
       "z_crop": 5176
     },
     {
-      "tile_id": "tile_0083",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 48583,
-      "y_start": 12448,
-      "z_crop": 3440
-    },
-    {
-      "tile_id": "tile_0084",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0086",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100730,
-      "y_start": 41373,
-      "z_crop": 5126
+      "x_start": 37487,
+      "y_start": 19961,
+      "z_crop": 4347
     },
     {
       "tile_id": "tile_0085",
@@ -700,20 +700,28 @@
       "z_crop": 1638
     },
     {
-      "tile_id": "tile_0086",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37487,
-      "y_start": 19961,
-      "z_crop": 4347
-    },
-    {
       "tile_id": "tile_0087",
       "category": "background",
       "kind": "fresh",
       "x_start": 25949,
       "y_start": 39447,
       "z_crop": 3844
+    },
+    {
+      "tile_id": "tile_0090",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 50886,
+      "y_start": 21129,
+      "z_crop": 3603
+    },
+    {
+      "tile_id": "tile_0084",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100730,
+      "y_start": 41373,
+      "z_crop": 5126
     },
     {
       "tile_id": "tile_0088",
@@ -732,20 +740,12 @@
       "z_crop": 5176
     },
     {
-      "tile_id": "tile_0090",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 50886,
-      "y_start": 21129,
-      "z_crop": 3603
-    },
-    {
-      "tile_id": "tile_0091",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0093",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100795,
-      "y_start": 41503,
-      "z_crop": 5126
+      "x_start": 38124,
+      "y_start": 19853,
+      "z_crop": 4347
     },
     {
       "tile_id": "tile_0092",
@@ -756,20 +756,28 @@
       "z_crop": 1673
     },
     {
-      "tile_id": "tile_0093",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 38124,
-      "y_start": 19853,
-      "z_crop": 4347
-    },
-    {
       "tile_id": "tile_0094",
       "category": "background",
       "kind": "fresh",
       "x_start": 26441,
       "y_start": 39624,
       "z_crop": 3845
+    },
+    {
+      "tile_id": "tile_0097",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 88623,
+      "y_start": 41539,
+      "z_crop": 3911
+    },
+    {
+      "tile_id": "tile_0091",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100795,
+      "y_start": 41503,
+      "z_crop": 5126
     },
     {
       "tile_id": "tile_0095",
@@ -788,20 +796,12 @@
       "z_crop": 5181
     },
     {
-      "tile_id": "tile_0097",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 88623,
-      "y_start": 41539,
-      "z_crop": 3911
-    },
-    {
-      "tile_id": "tile_0098",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0100",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100215,
-      "y_start": 44169,
-      "z_crop": 5128
+      "x_start": 40806,
+      "y_start": 18312,
+      "z_crop": 4347
     },
     {
       "tile_id": "tile_0099",
@@ -812,20 +812,28 @@
       "z_crop": 1885
     },
     {
-      "tile_id": "tile_0100",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40806,
-      "y_start": 18312,
-      "z_crop": 4347
-    },
-    {
       "tile_id": "tile_0101",
       "category": "background",
       "kind": "fresh",
       "x_start": 25811,
       "y_start": 39626,
       "z_crop": 3848
+    },
+    {
+      "tile_id": "tile_0104",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 68328,
+      "y_start": 20855,
+      "z_crop": 3987
+    },
+    {
+      "tile_id": "tile_0098",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100215,
+      "y_start": 44169,
+      "z_crop": 5128
     },
     {
       "tile_id": "tile_0102",
@@ -844,20 +852,12 @@
       "z_crop": 5194
     },
     {
-      "tile_id": "tile_0104",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 68328,
-      "y_start": 20855,
-      "z_crop": 3987
-    },
-    {
-      "tile_id": "tile_0105",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0107",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100296,
-      "y_start": 44034,
-      "z_crop": 5128
+      "x_start": 40813,
+      "y_start": 18469,
+      "z_crop": 4347
     },
     {
       "tile_id": "tile_0106",
@@ -868,20 +868,28 @@
       "z_crop": 3491
     },
     {
-      "tile_id": "tile_0107",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40813,
-      "y_start": 18469,
-      "z_crop": 4347
-    },
-    {
       "tile_id": "tile_0108",
       "category": "background",
       "kind": "fresh",
       "x_start": 25873,
       "y_start": 39784,
       "z_crop": 3856
+    },
+    {
+      "tile_id": "tile_0111",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 46564,
+      "y_start": 22893,
+      "z_crop": 4205
+    },
+    {
+      "tile_id": "tile_0105",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100296,
+      "y_start": 44034,
+      "z_crop": 5128
     },
     {
       "tile_id": "tile_0109",
@@ -900,20 +908,12 @@
       "z_crop": 5198
     },
     {
-      "tile_id": "tile_0111",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 46564,
-      "y_start": 22893,
-      "z_crop": 4205
-    },
-    {
-      "tile_id": "tile_0112",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0114",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100677,
-      "y_start": 41412,
-      "z_crop": 5128
+      "x_start": 37853,
+      "y_start": 19847,
+      "z_crop": 4350
     },
     {
       "tile_id": "tile_0113",
@@ -924,20 +924,28 @@
       "z_crop": 3491
     },
     {
-      "tile_id": "tile_0114",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37853,
-      "y_start": 19847,
-      "z_crop": 4350
-    },
-    {
       "tile_id": "tile_0115",
       "category": "background",
       "kind": "fresh",
       "x_start": 26858,
       "y_start": 38800,
       "z_crop": 3860
+    },
+    {
+      "tile_id": "tile_0118",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 23449,
+      "y_start": 22986,
+      "z_crop": 4331
+    },
+    {
+      "tile_id": "tile_0112",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100677,
+      "y_start": 41412,
+      "z_crop": 5128
     },
     {
       "tile_id": "tile_0116",
@@ -956,20 +964,12 @@
       "z_crop": 5205
     },
     {
-      "tile_id": "tile_0118",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 23449,
-      "y_start": 22986,
-      "z_crop": 4331
-    },
-    {
-      "tile_id": "tile_0119",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0121",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100807,
-      "y_start": 41520,
-      "z_crop": 5128
+      "x_start": 38109,
+      "y_start": 20319,
+      "z_crop": 4350
     },
     {
       "tile_id": "tile_0120",
@@ -980,20 +980,28 @@
       "z_crop": 3955
     },
     {
-      "tile_id": "tile_0121",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 38109,
-      "y_start": 20319,
-      "z_crop": 4350
-    },
-    {
       "tile_id": "tile_0122",
       "category": "background",
       "kind": "fresh",
       "x_start": 28162,
       "y_start": 38904,
       "z_crop": 3869
+    },
+    {
+      "tile_id": "tile_0139",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 43293,
+      "y_start": 37860,
+      "z_crop": 4918
+    },
+    {
+      "tile_id": "tile_0119",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100807,
+      "y_start": 41520,
+      "z_crop": 5128
     },
     {
       "tile_id": "tile_0123",
@@ -1012,12 +1020,12 @@
       "z_crop": 5210
     },
     {
-      "tile_id": "tile_0126",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0128",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 101482,
-      "y_start": 43985,
-      "z_crop": 5128
+      "x_start": 38293,
+      "y_start": 19952,
+      "z_crop": 4350
     },
     {
       "tile_id": "tile_0127",
@@ -1028,20 +1036,28 @@
       "z_crop": 4156
     },
     {
-      "tile_id": "tile_0128",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 38293,
-      "y_start": 19952,
-      "z_crop": 4350
-    },
-    {
       "tile_id": "tile_0129",
       "category": "background",
       "kind": "fresh",
       "x_start": 27991,
       "y_start": 37144,
       "z_crop": 3873
+    },
+    {
+      "tile_id": "tile_0146",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 77619,
+      "y_start": 19948,
+      "z_crop": 5009
+    },
+    {
+      "tile_id": "tile_0126",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101482,
+      "y_start": 43985,
+      "z_crop": 5128
     },
     {
       "tile_id": "tile_0130",
@@ -1060,20 +1076,12 @@
       "z_crop": 5212
     },
     {
-      "tile_id": "tile_0132",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 45171,
-      "y_start": 31577,
-      "z_crop": 4673
-    },
-    {
-      "tile_id": "tile_0133",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0135",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 102098,
-      "y_start": 43834,
-      "z_crop": 5128
+      "x_start": 40458,
+      "y_start": 17713,
+      "z_crop": 4350
     },
     {
       "tile_id": "tile_0134",
@@ -1084,20 +1092,28 @@
       "z_crop": 5701
     },
     {
-      "tile_id": "tile_0135",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40458,
-      "y_start": 17713,
-      "z_crop": 4350
-    },
-    {
       "tile_id": "tile_0136",
       "category": "background",
       "kind": "fresh",
       "x_start": 40178,
       "y_start": 16468,
       "z_crop": 4306
+    },
+    {
+      "tile_id": "tile_0153",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 86357,
+      "y_start": 33692,
+      "z_crop": 5055
+    },
+    {
+      "tile_id": "tile_0133",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102098,
+      "y_start": 43834,
+      "z_crop": 5128
     },
     {
       "tile_id": "tile_0137",
@@ -1116,12 +1132,12 @@
       "z_crop": 5215
     },
     {
-      "tile_id": "tile_0140",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0142",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100196,
-      "y_start": 44143,
-      "z_crop": 5130
+      "x_start": 40600,
+      "y_start": 17563,
+      "z_crop": 4350
     },
     {
       "tile_id": "tile_0141",
@@ -1132,20 +1148,28 @@
       "z_crop": 5751
     },
     {
-      "tile_id": "tile_0142",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40600,
-      "y_start": 17563,
-      "z_crop": 4350
-    },
-    {
       "tile_id": "tile_0143",
       "category": "background",
       "kind": "fresh",
       "x_start": 39665,
       "y_start": 19634,
       "z_crop": 4338
+    },
+    {
+      "tile_id": "tile_0167",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 102467,
+      "y_start": 43986,
+      "z_crop": 5107
+    },
+    {
+      "tile_id": "tile_0140",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100196,
+      "y_start": 44143,
+      "z_crop": 5130
     },
     {
       "tile_id": "tile_0144",
@@ -1164,20 +1188,12 @@
       "z_crop": 5215
     },
     {
-      "tile_id": "tile_0146",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 77619,
-      "y_start": 19948,
-      "z_crop": 5009
-    },
-    {
-      "tile_id": "tile_0147",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0149",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100230,
-      "y_start": 44007,
-      "z_crop": 5130
+      "x_start": 40786,
+      "y_start": 16417,
+      "z_crop": 4350
     },
     {
       "tile_id": "tile_0148",
@@ -1188,20 +1204,28 @@
       "z_crop": 5857
     },
     {
-      "tile_id": "tile_0149",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40786,
-      "y_start": 16417,
-      "z_crop": 4350
-    },
-    {
       "tile_id": "tile_0150",
       "category": "background",
       "kind": "fresh",
       "x_start": 39665,
       "y_start": 18811,
       "z_crop": 4343
+    },
+    {
+      "tile_id": "tile_0174",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 69179,
+      "y_start": 41397,
+      "z_crop": 5186
+    },
+    {
+      "tile_id": "tile_0147",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100230,
+      "y_start": 44007,
+      "z_crop": 5130
     },
     {
       "tile_id": "tile_0151",
@@ -1220,20 +1244,12 @@
       "z_crop": 5220
     },
     {
-      "tile_id": "tile_0153",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 86357,
-      "y_start": 33692,
-      "z_crop": 5055
-    },
-    {
-      "tile_id": "tile_0154",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0156",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 100705,
-      "y_start": 41434,
-      "z_crop": 5130
+      "x_start": 37072,
+      "y_start": 20051,
+      "z_crop": 4352
     },
     {
       "tile_id": "tile_0155",
@@ -1244,20 +1260,28 @@
       "z_crop": 5858
     },
     {
-      "tile_id": "tile_0156",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37072,
-      "y_start": 20051,
-      "z_crop": 4352
-    },
-    {
       "tile_id": "tile_0157",
       "category": "background",
       "kind": "fresh",
       "x_start": 39193,
       "y_start": 20111,
       "z_crop": 4345
+    },
+    {
+      "tile_id": "tile_0179",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 85420,
+      "y_start": 35419,
+      "z_crop": 5466
+    },
+    {
+      "tile_id": "tile_0154",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100705,
+      "y_start": 41434,
+      "z_crop": 5130
     },
     {
       "tile_id": "tile_0158",
@@ -1276,20 +1300,12 @@
       "z_crop": 5224
     },
     {
-      "tile_id": "tile_0160",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 95952,
-      "y_start": 33580,
-      "z_crop": 5068
-    },
-    {
-      "tile_id": "tile_0161",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0163",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 101863,
-      "y_start": 43695,
-      "z_crop": 5130
+      "x_start": 37210,
+      "y_start": 20099,
+      "z_crop": 4352
     },
     {
       "tile_id": "tile_0162",
@@ -1300,20 +1316,28 @@
       "z_crop": 5860
     },
     {
-      "tile_id": "tile_0163",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37210,
-      "y_start": 20099,
-      "z_crop": 4352
-    },
-    {
       "tile_id": "tile_0164",
       "category": "background",
       "kind": "fresh",
       "x_start": 37538,
       "y_start": 16726,
       "z_crop": 4346
+    },
+    {
+      "tile_id": "tile_0184",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 29344,
+      "y_start": 24193,
+      "z_crop": 5617
+    },
+    {
+      "tile_id": "tile_0161",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101863,
+      "y_start": 43695,
+      "z_crop": 5130
     },
     {
       "tile_id": "tile_0165",
@@ -1332,20 +1356,12 @@
       "z_crop": 5232
     },
     {
-      "tile_id": "tile_0167",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 102467,
-      "y_start": 43986,
-      "z_crop": 5107
-    },
-    {
-      "tile_id": "tile_0168",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0170",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 102008,
-      "y_start": 43965,
-      "z_crop": 5130
+      "x_start": 40503,
+      "y_start": 16986,
+      "z_crop": 4352
     },
     {
       "tile_id": "tile_0169",
@@ -1356,20 +1372,28 @@
       "z_crop": 5890
     },
     {
-      "tile_id": "tile_0170",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40503,
-      "y_start": 16986,
-      "z_crop": 4352
-    },
-    {
       "tile_id": "tile_0171",
       "category": "background",
       "kind": "fresh",
       "x_start": 39986,
       "y_start": 18877,
       "z_crop": 4347
+    },
+    {
+      "tile_id": "tile_0189",
+      "category": "anchor_gt",
+      "kind": "anchor",
+      "x_start": 63470,
+      "y_start": 31482,
+      "z_crop": 6064
+    },
+    {
+      "tile_id": "tile_0168",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102008,
+      "y_start": 43965,
+      "z_crop": 5130
     },
     {
       "tile_id": "tile_0172",
@@ -1388,20 +1412,12 @@
       "z_crop": 5241
     },
     {
-      "tile_id": "tile_0174",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 69179,
-      "y_start": 41397,
-      "z_crop": 5186
-    },
-    {
-      "tile_id": "tile_0175",
-      "category": "dense_neuropil",
+      "tile_id": "tile_0177",
+      "category": "medium",
       "kind": "fresh",
-      "x_start": 102091,
-      "y_start": 43817,
-      "z_crop": 5130
+      "x_start": 40552,
+      "y_start": 16781,
+      "z_crop": 4352
     },
     {
       "tile_id": "tile_0176",
@@ -1412,14 +1428,6 @@
       "z_crop": 5891
     },
     {
-      "tile_id": "tile_0177",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40552,
-      "y_start": 16781,
-      "z_crop": 4352
-    },
-    {
       "tile_id": "tile_0178",
       "category": "background",
       "kind": "fresh",
@@ -1428,28 +1436,20 @@
       "z_crop": 4348
     },
     {
-      "tile_id": "tile_0179",
+      "tile_id": "tile_0194",
       "category": "anchor_gt",
       "kind": "anchor",
-      "x_start": 85420,
-      "y_start": 35419,
-      "z_crop": 5466
+      "x_start": 35183,
+      "y_start": 41305,
+      "z_crop": 6496
     },
     {
-      "tile_id": "tile_0180",
+      "tile_id": "tile_0175",
       "category": "dense_neuropil",
       "kind": "fresh",
-      "x_start": 100242,
-      "y_start": 44113,
-      "z_crop": 5132
-    },
-    {
-      "tile_id": "tile_0181",
-      "category": "sparse",
-      "kind": "fresh",
-      "x_start": 97843,
-      "y_start": 20826,
-      "z_crop": 5931
+      "x_start": 102091,
+      "y_start": 43817,
+      "z_crop": 5130
     },
     {
       "tile_id": "tile_0182",
@@ -1460,124 +1460,20 @@
       "z_crop": 4352
     },
     {
+      "tile_id": "tile_0181",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 97843,
+      "y_start": 20826,
+      "z_crop": 5931
+    },
+    {
       "tile_id": "tile_0183",
       "category": "background",
       "kind": "fresh",
       "x_start": 37021,
       "y_start": 16672,
       "z_crop": 4350
-    },
-    {
-      "tile_id": "tile_0184",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 29344,
-      "y_start": 24193,
-      "z_crop": 5617
-    },
-    {
-      "tile_id": "tile_0185",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 100378,
-      "y_start": 44064,
-      "z_crop": 5132
-    },
-    {
-      "tile_id": "tile_0186",
-      "category": "sparse",
-      "kind": "fresh",
-      "x_start": 26634,
-      "y_start": 45150,
-      "z_crop": 5936
-    },
-    {
-      "tile_id": "tile_0187",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 40634,
-      "y_start": 17867,
-      "z_crop": 4352
-    },
-    {
-      "tile_id": "tile_0188",
-      "category": "background",
-      "kind": "fresh",
-      "x_start": 37899,
-      "y_start": 17566,
-      "z_crop": 4352
-    },
-    {
-      "tile_id": "tile_0189",
-      "category": "anchor_gt",
-      "kind": "anchor",
-      "x_start": 63470,
-      "y_start": 31482,
-      "z_crop": 6064
-    },
-    {
-      "tile_id": "tile_0190",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 101883,
-      "y_start": 43681,
-      "z_crop": 5132
-    },
-    {
-      "tile_id": "tile_0191",
-      "category": "sparse",
-      "kind": "fresh",
-      "x_start": 44020,
-      "y_start": 44978,
-      "z_crop": 5936
-    },
-    {
-      "tile_id": "tile_0192",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 36831,
-      "y_start": 19952,
-      "z_crop": 4354
-    },
-    {
-      "tile_id": "tile_0193",
-      "category": "background",
-      "kind": "fresh",
-      "x_start": 36927,
-      "y_start": 17057,
-      "z_crop": 4354
-    },
-    {
-      "tile_id": "tile_0195",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 101956,
-      "y_start": 44131,
-      "z_crop": 5132
-    },
-    {
-      "tile_id": "tile_0196",
-      "category": "sparse",
-      "kind": "fresh",
-      "x_start": 87092,
-      "y_start": 40845,
-      "z_crop": 5937
-    },
-    {
-      "tile_id": "tile_0197",
-      "category": "medium",
-      "kind": "fresh",
-      "x_start": 37829,
-      "y_start": 19988,
-      "z_crop": 4354
-    },
-    {
-      "tile_id": "tile_0198",
-      "category": "background",
-      "kind": "fresh",
-      "x_start": 39309,
-      "y_start": 18346,
-      "z_crop": 4355
     },
     {
       "tile_id": "tile_0199",
@@ -1588,20 +1484,108 @@
       "z_crop": 6630
     },
     {
-      "tile_id": "tile_0200",
+      "tile_id": "tile_0180",
       "category": "dense_neuropil",
       "kind": "fresh",
-      "x_start": 102020,
-      "y_start": 43959,
+      "x_start": 100242,
+      "y_start": 44113,
       "z_crop": 5132
     },
     {
-      "tile_id": "tile_0201",
+      "tile_id": "tile_0187",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40634,
+      "y_start": 17867,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0186",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 73774,
-      "y_start": 24395,
-      "z_crop": 6028
+      "x_start": 26634,
+      "y_start": 45150,
+      "z_crop": 5936
+    },
+    {
+      "tile_id": "tile_0188",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 37899,
+      "y_start": 17566,
+      "z_crop": 4352
+    },
+    {
+      "tile_id": "tile_0185",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100378,
+      "y_start": 44064,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0192",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 36831,
+      "y_start": 19952,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0191",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 44020,
+      "y_start": 44978,
+      "z_crop": 5936
+    },
+    {
+      "tile_id": "tile_0193",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 36927,
+      "y_start": 17057,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0190",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101883,
+      "y_start": 43681,
+      "z_crop": 5132
+    },
+    {
+      "tile_id": "tile_0197",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 37829,
+      "y_start": 19988,
+      "z_crop": 4354
+    },
+    {
+      "tile_id": "tile_0196",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 87092,
+      "y_start": 40845,
+      "z_crop": 5937
+    },
+    {
+      "tile_id": "tile_0198",
+      "category": "background",
+      "kind": "fresh",
+      "x_start": 39309,
+      "y_start": 18346,
+      "z_crop": 4355
+    },
+    {
+      "tile_id": "tile_0195",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101956,
+      "y_start": 44131,
+      "z_crop": 5132
     },
     {
       "tile_id": "tile_0202",
@@ -1612,20 +1596,20 @@
       "z_crop": 4354
     },
     {
-      "tile_id": "tile_0203",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 102062,
-      "y_start": 43829,
-      "z_crop": 5132
-    },
-    {
-      "tile_id": "tile_0204",
+      "tile_id": "tile_0201",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 70946,
-      "y_start": 19484,
-      "z_crop": 6034
+      "x_start": 73774,
+      "y_start": 24395,
+      "z_crop": 6028
+    },
+    {
+      "tile_id": "tile_0200",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102020,
+      "y_start": 43959,
+      "z_crop": 5132
     },
     {
       "tile_id": "tile_0205",
@@ -1636,20 +1620,20 @@
       "z_crop": 4354
     },
     {
-      "tile_id": "tile_0206",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 100241,
-      "y_start": 44100,
-      "z_crop": 5134
-    },
-    {
-      "tile_id": "tile_0207",
+      "tile_id": "tile_0204",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 89990,
-      "y_start": 16148,
-      "z_crop": 6073
+      "x_start": 70946,
+      "y_start": 19484,
+      "z_crop": 6034
+    },
+    {
+      "tile_id": "tile_0203",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102062,
+      "y_start": 43829,
+      "z_crop": 5132
     },
     {
       "tile_id": "tile_0208",
@@ -1660,20 +1644,20 @@
       "z_crop": 4354
     },
     {
-      "tile_id": "tile_0209",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 100369,
-      "y_start": 44061,
-      "z_crop": 5134
-    },
-    {
-      "tile_id": "tile_0210",
+      "tile_id": "tile_0207",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 52961,
-      "y_start": 48872,
-      "z_crop": 6122
+      "x_start": 89990,
+      "y_start": 16148,
+      "z_crop": 6073
+    },
+    {
+      "tile_id": "tile_0206",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100241,
+      "y_start": 44100,
+      "z_crop": 5134
     },
     {
       "tile_id": "tile_0211",
@@ -1684,20 +1668,20 @@
       "z_crop": 4354
     },
     {
-      "tile_id": "tile_0212",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 101894,
-      "y_start": 43680,
-      "z_crop": 5134
-    },
-    {
-      "tile_id": "tile_0213",
+      "tile_id": "tile_0210",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 38514,
-      "y_start": 16087,
-      "z_crop": 6150
+      "x_start": 52961,
+      "y_start": 48872,
+      "z_crop": 6122
+    },
+    {
+      "tile_id": "tile_0209",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 100369,
+      "y_start": 44061,
+      "z_crop": 5134
     },
     {
       "tile_id": "tile_0214",
@@ -1708,20 +1692,20 @@
       "z_crop": 4355
     },
     {
-      "tile_id": "tile_0215",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 101964,
-      "y_start": 44087,
-      "z_crop": 5134
-    },
-    {
-      "tile_id": "tile_0216",
+      "tile_id": "tile_0213",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 73833,
-      "y_start": 24335,
-      "z_crop": 6169
+      "x_start": 38514,
+      "y_start": 16087,
+      "z_crop": 6150
+    },
+    {
+      "tile_id": "tile_0212",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101894,
+      "y_start": 43680,
+      "z_crop": 5134
     },
     {
       "tile_id": "tile_0217",
@@ -1732,20 +1716,20 @@
       "z_crop": 4355
     },
     {
-      "tile_id": "tile_0218",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 101985,
-      "y_start": 43817,
-      "z_crop": 5134
-    },
-    {
-      "tile_id": "tile_0219",
+      "tile_id": "tile_0216",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 15398,
-      "y_start": 28473,
-      "z_crop": 6275
+      "x_start": 73833,
+      "y_start": 24335,
+      "z_crop": 6169
+    },
+    {
+      "tile_id": "tile_0215",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101964,
+      "y_start": 44087,
+      "z_crop": 5134
     },
     {
       "tile_id": "tile_0220",
@@ -1756,20 +1740,20 @@
       "z_crop": 4355
     },
     {
-      "tile_id": "tile_0221",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 102018,
-      "y_start": 43946,
-      "z_crop": 5134
-    },
-    {
-      "tile_id": "tile_0222",
+      "tile_id": "tile_0219",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 46867,
-      "y_start": 24258,
-      "z_crop": 6549
+      "x_start": 15398,
+      "y_start": 28473,
+      "z_crop": 6275
+    },
+    {
+      "tile_id": "tile_0218",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 101985,
+      "y_start": 43817,
+      "z_crop": 5134
     },
     {
       "tile_id": "tile_0223",
@@ -1780,20 +1764,20 @@
       "z_crop": 4355
     },
     {
-      "tile_id": "tile_0224",
-      "category": "dense_neuropil",
-      "kind": "fresh",
-      "x_start": 99025,
-      "y_start": 42055,
-      "z_crop": 5158
-    },
-    {
-      "tile_id": "tile_0225",
+      "tile_id": "tile_0222",
       "category": "sparse",
       "kind": "fresh",
-      "x_start": 69508,
-      "y_start": 28450,
-      "z_crop": 6811
+      "x_start": 46867,
+      "y_start": 24258,
+      "z_crop": 6549
+    },
+    {
+      "tile_id": "tile_0221",
+      "category": "dense_neuropil",
+      "kind": "fresh",
+      "x_start": 102018,
+      "y_start": 43946,
+      "z_crop": 5134
     },
     {
       "tile_id": "tile_0226",
@@ -1804,12 +1788,28 @@
       "z_crop": 4355
     },
     {
-      "tile_id": "tile_0227",
+      "tile_id": "tile_0225",
+      "category": "sparse",
+      "kind": "fresh",
+      "x_start": 69508,
+      "y_start": 28450,
+      "z_crop": 6811
+    },
+    {
+      "tile_id": "tile_0224",
       "category": "dense_neuropil",
       "kind": "fresh",
-      "x_start": 99874,
-      "y_start": 44448,
+      "x_start": 99025,
+      "y_start": 42055,
       "z_crop": 5158
+    },
+    {
+      "tile_id": "tile_0229",
+      "category": "medium",
+      "kind": "fresh",
+      "x_start": 40684,
+      "y_start": 18438,
+      "z_crop": 4355
     },
     {
       "tile_id": "tile_0228",
@@ -1820,12 +1820,12 @@
       "z_crop": 6829
     },
     {
-      "tile_id": "tile_0229",
-      "category": "medium",
+      "tile_id": "tile_0227",
+      "category": "dense_neuropil",
       "kind": "fresh",
-      "x_start": 40684,
-      "y_start": 18438,
-      "z_crop": 4355
+      "x_start": 99874,
+      "y_start": 44448,
+      "z_crop": 5158
     },
     {
       "tile_id": "tile_0230",
@@ -2020,329 +2020,221 @@
           "y_local": 152
         }
       ],
-      "note": "Each green ring marks one synaptic vesicle: a small round profile, dark membrane rim, lighter centre. Toggle markers off to see them in the raw EM."
+      "note": "Each green ring marks one synaptic vesicle: a small round profile, dark membrane rim, lighter centre. Toggle the markers off to see them in the raw EM."
     },
     {
-      "tile_id": "tile_0139",
-      "x_start": 43293,
-      "y_start": 37860,
-      "z_crop": 4918,
+      "tile_id": "tile_0160",
+      "x_start": 95952,
+      "y_start": 33580,
+      "z_crop": 5068,
       "gt_points": [
         {
-          "x_local": 115,
-          "y_local": 8
-        },
-        {
-          "x_local": 86,
-          "y_local": 28
-        },
-        {
-          "x_local": 27,
-          "y_local": 40
-        },
-        {
-          "x_local": 147,
-          "y_local": 42
-        },
-        {
-          "x_local": 131,
-          "y_local": 58
-        },
-        {
-          "x_local": 125,
-          "y_local": 64
-        },
-        {
-          "x_local": 247,
-          "y_local": 66
-        },
-        {
-          "x_local": 137,
-          "y_local": 66
-        },
-        {
-          "x_local": 157,
-          "y_local": 80
-        },
-        {
-          "x_local": 247,
-          "y_local": 78
-        },
-        {
-          "x_local": 98,
-          "y_local": 82
-        },
-        {
-          "x_local": 83,
-          "y_local": 90
-        },
-        {
-          "x_local": 177,
-          "y_local": 92
-        },
-        {
-          "x_local": 121,
-          "y_local": 96
-        },
-        {
-          "x_local": 169,
-          "y_local": 102
-        },
-        {
-          "x_local": 20,
-          "y_local": 164
-        },
-        {
-          "x_local": 27,
-          "y_local": 176
-        },
-        {
-          "x_local": 187,
-          "y_local": 196
-        },
-        {
-          "x_local": 179,
-          "y_local": 200
-        },
-        {
-          "x_local": 215,
-          "y_local": 214
-        },
-        {
-          "x_local": 89,
-          "y_local": 224
-        },
-        {
-          "x_local": 3,
-          "y_local": 230
-        },
-        {
-          "x_local": 95,
-          "y_local": 232
-        },
-        {
-          "x_local": 136,
-          "y_local": 246
-        },
-        {
-          "x_local": 21,
-          "y_local": 252
-        },
-        {
-          "x_local": 93,
-          "y_local": 77
-        },
-        {
-          "x_local": 149,
-          "y_local": 33
-        },
-        {
-          "x_local": 168,
-          "y_local": 3
-        },
-        {
-          "x_local": 150,
-          "y_local": 24
-        },
-        {
-          "x_local": 120,
+          "x_local": 165,
           "y_local": 7
         },
         {
-          "x_local": 31,
-          "y_local": 33
+          "x_local": 184,
+          "y_local": 10
         },
         {
-          "x_local": 72,
-          "y_local": 240
-        },
-        {
-          "x_local": 74,
-          "y_local": 246
-        },
-        {
-          "x_local": 79,
-          "y_local": 136
-        }
-      ],
-      "note": "Vesicles cluster near synapses. Mitochondria and ER are larger and irregular \u2014 they are NOT vesicles, so they carry no ring."
-    },
-    {
-      "tile_id": "tile_0194",
-      "x_start": 35183,
-      "y_start": 41305,
-      "z_crop": 6496,
-      "gt_points": [
-        {
-          "x_local": 114,
-          "y_local": 146
-        },
-        {
-          "x_local": 137,
-          "y_local": 91
-        },
-        {
-          "x_local": 142,
-          "y_local": 94
-        },
-        {
-          "x_local": 34,
-          "y_local": 35
-        },
-        {
-          "x_local": 7,
-          "y_local": 119
+          "x_local": 134,
+          "y_local": 16
         },
         {
           "x_local": 129,
-          "y_local": 32
-        },
-        {
-          "x_local": 85,
-          "y_local": 25
-        },
-        {
-          "x_local": 196,
-          "y_local": 140
-        },
-        {
-          "x_local": 209,
-          "y_local": 143
-        },
-        {
-          "x_local": 205,
-          "y_local": 152
-        },
-        {
-          "x_local": 195,
-          "y_local": 152
-        },
-        {
-          "x_local": 47,
-          "y_local": 224
-        },
-        {
-          "x_local": 31,
-          "y_local": 203
-        },
-        {
-          "x_local": 26,
-          "y_local": 194
-        },
-        {
-          "x_local": 30,
-          "y_local": 189
-        },
-        {
-          "x_local": 37,
-          "y_local": 190
-        },
-        {
-          "x_local": 95,
-          "y_local": 62
-        },
-        {
-          "x_local": 100,
-          "y_local": 64
-        },
-        {
-          "x_local": 130,
-          "y_local": 76
-        },
-        {
-          "x_local": 176,
-          "y_local": 12
-        },
-        {
-          "x_local": 180,
-          "y_local": 21
-        },
-        {
-          "x_local": 12,
-          "y_local": 25
-        },
-        {
-          "x_local": 7,
-          "y_local": 25
-        },
-        {
-          "x_local": 9,
-          "y_local": 20
-        },
-        {
-          "x_local": 9,
-          "y_local": 34
-        },
-        {
-          "x_local": 111,
-          "y_local": 162
-        },
-        {
-          "x_local": 114,
-          "y_local": 154
+          "y_local": 17
         },
         {
           "x_local": 121,
-          "y_local": 153
+          "y_local": 32
         },
         {
-          "x_local": 126,
-          "y_local": 142
-        },
-        {
-          "x_local": 105,
-          "y_local": 164
-        },
-        {
-          "x_local": 2,
-          "y_local": 47
-        },
-        {
-          "x_local": 158,
+          "x_local": 101,
           "y_local": 37
         },
         {
-          "x_local": 170,
-          "y_local": 5
+          "x_local": 120,
+          "y_local": 42
         },
         {
-          "x_local": 204,
-          "y_local": 129
+          "x_local": 118,
+          "y_local": 72
         },
         {
-          "x_local": 187,
-          "y_local": 137
+          "x_local": 246,
+          "y_local": 104
         },
         {
-          "x_local": 204,
-          "y_local": 118
+          "x_local": 128,
+          "y_local": 111
         },
         {
-          "x_local": 236,
-          "y_local": 66
+          "x_local": 116,
+          "y_local": 139
         },
         {
-          "x_local": 240,
-          "y_local": 66
+          "x_local": 124,
+          "y_local": 140
         },
         {
-          "x_local": 65,
-          "y_local": 83
+          "x_local": 168,
+          "y_local": 146
         },
         {
-          "x_local": 110,
-          "y_local": 106
+          "x_local": 112,
+          "y_local": 148
         },
         {
-          "x_local": 129,
-          "y_local": 115
+          "x_local": 141,
+          "y_local": 149
         },
         {
           "x_local": 113,
-          "y_local": 66
+          "y_local": 160
+        },
+        {
+          "x_local": 184,
+          "y_local": 161
+        },
+        {
+          "x_local": 212,
+          "y_local": 246
+        },
+        {
+          "x_local": 94,
+          "y_local": 251
         }
       ],
-      "note": "Use Z +/- on the real tiles to confirm faint vesicles across sections. Click the centre of each one."
+      "note": "The large oval organelles with internal texture are mitochondria \u2014 NOT vesicles. Notice the rings sit only on the small round vesicles."
+    },
+    {
+      "tile_id": "tile_0132",
+      "x_start": 45171,
+      "y_start": 31577,
+      "z_crop": 4673,
+      "gt_points": [
+        {
+          "x_local": 248,
+          "y_local": 13
+        },
+        {
+          "x_local": 135,
+          "y_local": 43
+        },
+        {
+          "x_local": 229,
+          "y_local": 47
+        },
+        {
+          "x_local": 238,
+          "y_local": 48
+        },
+        {
+          "x_local": 233,
+          "y_local": 49
+        },
+        {
+          "x_local": 237,
+          "y_local": 54
+        },
+        {
+          "x_local": 225,
+          "y_local": 53
+        },
+        {
+          "x_local": 229,
+          "y_local": 57
+        },
+        {
+          "x_local": 253,
+          "y_local": 58
+        },
+        {
+          "x_local": 253,
+          "y_local": 61
+        },
+        {
+          "x_local": 230,
+          "y_local": 64
+        },
+        {
+          "x_local": 222,
+          "y_local": 67
+        },
+        {
+          "x_local": 170,
+          "y_local": 72
+        },
+        {
+          "x_local": 170,
+          "y_local": 78
+        },
+        {
+          "x_local": 168,
+          "y_local": 115
+        },
+        {
+          "x_local": 170,
+          "y_local": 125
+        },
+        {
+          "x_local": 154,
+          "y_local": 130
+        },
+        {
+          "x_local": 71,
+          "y_local": 137
+        },
+        {
+          "x_local": 157,
+          "y_local": 140
+        },
+        {
+          "x_local": 170,
+          "y_local": 139
+        },
+        {
+          "x_local": 50,
+          "y_local": 149
+        },
+        {
+          "x_local": 247,
+          "y_local": 155
+        },
+        {
+          "x_local": 240,
+          "y_local": 158
+        },
+        {
+          "x_local": 189,
+          "y_local": 161
+        },
+        {
+          "x_local": 183,
+          "y_local": 163
+        },
+        {
+          "x_local": 199,
+          "y_local": 169
+        },
+        {
+          "x_local": 206,
+          "y_local": 170
+        },
+        {
+          "x_local": 187,
+          "y_local": 174
+        },
+        {
+          "x_local": 222,
+          "y_local": 190
+        },
+        {
+          "x_local": 173,
+          "y_local": 230
+        }
+      ],
+      "note": "\u26a0 A vesicle marker landed on this mitochondrion \u2014 a false positive. Mitochondria, ER and membranes are not vesicles: don't click them."
     }
   ]
 }

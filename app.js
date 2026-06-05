@@ -10,10 +10,11 @@
 (function () {
   "use strict";
   const PUBLIC = "public/";
-  // A vesicle is ~3 px radius at MIP1 8 nm (matches the radius-3 disk used in training).
-  // Markers are drawn at this IMAGE-space radius * view.scale, so they track magnification
-  // and show the true vesicle size (mirrors vesicle_gui.get_annotation_radius_display).
-  const VESICLE_R_IMG = 3;
+  // Marker radius in IMAGE px, drawn at VESICLE_R_IMG * view.scale so it tracks zoom and
+  // shows true vesicle size. Matches vesicle_gui.get_annotation_radius_display exactly:
+  // raw_radius = 6 / zoom_factor(=3) = 2 image px, floored at 2 display px.
+  const VESICLE_R_IMG = 2;
+  const MARKER_MIN_PX = 2;      // display-px floor (GUI: max(2.0, ...))
   const HIT_R_IMG = 5;          // toggle-remove tolerance in IMAGE px (zoom-independent)
   const $ = id => document.getElementById(id);
 
@@ -137,7 +138,7 @@
   function drawPoints() {
     if (!showVesicles) return;
     const onCentre = zi === META.center_index;
-    const r = Math.max(1.5, VESICLE_R_IMG * view.scale);   // scales with magnification ~ vesicle size
+    const r = Math.max(MARKER_MIN_PX, VESICLE_R_IMG * view.scale);   // scales with magnification ~ vesicle size
     ctx.lineWidth = Math.max(1, r * 0.3);
     ctx.strokeStyle = onCentre ? getCSS("--vesicle") : "rgba(255,77,109,0.4)";
     for (const p of points) {
@@ -159,7 +160,11 @@
       view.cx = dragStart.cx - dx * k; view.cy = dragStart.cy - dy * k; clampView(); draw();
     });
     canvas.addEventListener("pointerup", e => { dragging = false; if (!moved) handleClick(e); else viewportEvents++; });
-    canvas.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e, e.deltaY < 0 ? 1.15 : 1 / 1.15); }, { passive: false });
+    canvas.addEventListener("wheel", e => {
+      e.preventDefault();
+      if (e.shiftKey || e.ctrlKey || e.metaKey) zoomAt(e, e.deltaY < 0 ? 1.15 : 1 / 1.15);
+      else stepZ(e.deltaY < 0 ? +1 : -1);     // scroll = move through sections (matches the GUI)
+    }, { passive: false });
 
     $("z-up").onclick = () => stepZ(+1);
     $("z-down").onclick = () => stepZ(-1);
@@ -171,11 +176,20 @@
     $("skip-btn").onclick = skipTile;
     $("empty-btn").onclick = () => submit(true);
     $("submit-btn").onclick = () => submit(false);
+
+    // always-available collapsible help drawer (a tab toggles it; doesn't block the canvas)
+    const hd = $("help-drawer");
+    $("help-tab").onclick = () => hd.classList.toggle("open");
+    $("help-close").onclick = () => hd.classList.remove("open");
+    $("help-toggle-ves").onclick = toggleVesicles;
+    $("help-examples").onclick = () => $("tutorial").classList.remove("hidden");
   }
 
   function toggleVesicles() {
     showVesicles = !showVesicles;
-    $("toggle-ves").textContent = showVesicles ? "👁 Hide vesicles" : "👁 Show vesicles";
+    const label = showVesicles ? "👁 Hide vesicles" : "👁 Show vesicles";
+    $("toggle-ves").textContent = label;
+    const h = $("help-toggle-ves"); if (h) h.textContent = label;   // keep help-drawer copy in sync
     draw();
   }
   function skipTile() {                     // advance WITHOUT recording (for tiles you can't judge)
@@ -223,8 +237,8 @@
       if ($("app").classList.contains("hidden")) return;
       if (e.target.tagName === "INPUT") return;
       switch (e.key) {
-        case "ArrowUp": case "]": stepZ(+1); break;
-        case "ArrowDown": case "[": stepZ(-1); break;
+        case "ArrowUp": case "]": e.preventDefault(); stepZ(+1); break;
+        case "ArrowDown": case "[": e.preventDefault(); stepZ(-1); break;
         case "+": case "=": zoomCentre(1.3); break;
         case "-": case "_": zoomCentre(1 / 1.3); break;
         case "0": snapBack(); break;

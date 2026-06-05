@@ -83,7 +83,8 @@
       </div>
       <p id="savemsg" class="savemsg hidden"></p>
       <p class="hint">Left-click adds a vesicle (markers scale with zoom ≈ true vesicle size); click a dot again to remove.
-        Drag to pan, scroll to zoom, <kbd>h</kbd> show/hide vesicles. <b>Submit &amp; next</b> (or <kbd>Enter</kbd>) saves and advances to the next tile.</p>
+        <b>Scroll = move section</b>, drag = pan, <kbd>Shift</kbd>+scroll or <kbd>＋</kbd>/<kbd>－</kbd> = zoom,
+        <kbd>h</kbd> = show/hide. <b>Submit &amp; next</b> (or <kbd>Enter</kbd>) saves and loads the next tile.</p>
     </section>
 
     <aside id="sidebar">
@@ -102,6 +103,23 @@
       <div class="panel muted small" id="tileinfo"></div>
     </aside>
   </main>
+
+  <!-- Always-available, collapsible help drawer (a side tab toggles it; it slides over the
+       edge only when open, so it never blocks the canvas). -->
+  <button id="help-tab" title="Help &amp; controls (always available)">❔&nbsp;Help</button>
+  <aside id="help-drawer">
+    <div class="help-head"><b>Help &amp; controls</b><button id="help-close" class="ghost" title="Close">×</button></div>
+    <ul class="help-keys">
+      <li><b>Click</b> — mark a vesicle (click a dot again to remove)</li>
+      <li><b>Scroll</b> — move up/down a section</li>
+      <li><b>Drag</b> — pan &nbsp;·&nbsp; <kbd>Shift</kbd>+scroll or <kbd>＋</kbd>/<kbd>－</kbd> — zoom</li>
+      <li><kbd>0</kbd> — snap back to the tile &nbsp;·&nbsp; <kbd>h</kbd> — show/hide vesicles</li>
+      <li><b>Submit &amp; next</b> / <kbd>Enter</kbd> — save &amp; load the next tile</li>
+    </ul>
+    <button id="help-toggle-ves" class="ghost">👁 Hide vesicles</button>
+    <button id="help-examples" class="ghost">📖 Worked examples</button>
+    <p class="muted small">Only the framed centre tile is annotated. Mitochondria &amp; ER are larger, irregular organelles — not vesicles.</p>
+  </aside>
 </div>
 
 <script src="config.js"></script>
