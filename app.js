@@ -83,8 +83,7 @@
   function finishAll() {
     tile = null; ctx.clearRect(0, 0, canvas.width, canvas.height);
     $("banner").classList.remove("hidden");
-    $("banner").textContent = "🎉 You've completed every tile — thank you!";
-    $("progress-pill").textContent = `${order.length}/${order.length} tiles`;
+    $("banner").textContent = "🎉 That's everything for now — thank you!";
   }
 
   // ───────────────────────── view transforms ─────────────────────────
@@ -258,7 +257,7 @@
     else { b.classList.remove("hidden"); b.textContent = `Context slice ${off > 0 ? "+" + off : off} — annotate only on the centre slice (press 0)`; }
   }
   function updateCount() { $("count-label").textContent = points.length + (points.length === 1 ? " vesicle" : " vesicles"); }
-  function updateProgress() { $("progress-pill").textContent = `tile ${idx + 1} / ${order.length}`; }
+  function updateProgress() { /* tile counter intentionally hidden — users shouldn't track totals */ }
   function updateStats() {
     $("stat-tiles").textContent = session.tiles;
     $("stat-vesicles").textContent = session.vesicles;
