@@ -41,7 +41,6 @@
     $("username-input").addEventListener("keydown", e => { if (e.key === "Enter") doLogin(); });
     $("show-tutorial-from-login").onclick = () => $("tutorial").classList.remove("hidden");
     $("tutorial-close").onclick = () => $("tutorial").classList.add("hidden");
-    $("tutorial-btn").onclick = () => $("tutorial").classList.remove("hidden");
     $("logout-btn").onclick = () => { localStorage.removeItem("am_username"); location.reload(); };
     if (!window.AM_DB.ONLINE) $("login-status").textContent = "Offline mode: data saved in this browser.";
   }
@@ -161,8 +160,8 @@
     canvas.addEventListener("pointerup", e => { dragging = false; if (!moved) handleClick(e); else viewportEvents++; });
     canvas.addEventListener("wheel", e => {
       e.preventDefault();
-      if (e.shiftKey || e.ctrlKey || e.metaKey) zoomAt(e, e.deltaY < 0 ? 1.15 : 1 / 1.15);
-      else stepZ(e.deltaY < 0 ? +1 : -1);     // scroll = move through sections (matches the GUI)
+      if (e.shiftKey || e.ctrlKey || e.metaKey) stepZ(e.deltaY < 0 ? +1 : -1);  // modifier+scroll = move section (Z)
+      else zoomAt(e, e.deltaY < 0 ? 1.15 : 1 / 1.15);                            // scroll = zoom
     }, { passive: false });
 
     $("z-up").onclick = () => stepZ(+1);
@@ -172,14 +171,12 @@
     $("snap").onclick = snapBack;
     $("clear").onclick = () => { points = []; updateCount(); draw(); };
     $("toggle-ves").onclick = toggleVesicles;
-    $("skip-btn").onclick = skipTile;
+    $("prev-btn").onclick = prevTile;
+    $("next-btn").onclick = nextTile;
     $("empty-btn").onclick = () => submit(true);
     $("submit-btn").onclick = () => submit(false);
 
-    // always-available collapsible help drawer (a tab toggles it; doesn't block the canvas)
-    const hd = $("help-drawer");
-    $("help-tab").onclick = () => hd.classList.toggle("open");
-    $("help-close").onclick = () => hd.classList.remove("open");
+    // help lives in one place: a collapsible panel in the sidebar (below the leaderboard)
     $("help-toggle-ves").onclick = toggleVesicles;
     $("help-examples").onclick = () => $("tutorial").classList.remove("hidden");
   }
@@ -191,10 +188,9 @@
     const h = $("help-toggle-ves"); if (h) h.textContent = label;   // keep help-drawer copy in sync
     draw();
   }
-  function skipTile() {                     // advance WITHOUT recording (for tiles you can't judge)
-    if (!tile) return;
-    idx += 1; loadTile();
-  }
+  // Sequence navigation WITHOUT saving (Submit & next is the saving path).
+  function prevTile() { if (idx > 0) { idx -= 1; loadTile(); } }
+  function nextTile() { if (idx < order.length) { idx += 1; loadTile(); } }
 
   function handleClick(e) {
     if (zi !== META.center_index) return nudge("You can only annotate on the centre slice — press 0 / Snap back.");
@@ -236,8 +232,10 @@
       if ($("app").classList.contains("hidden")) return;
       if (e.target.tagName === "INPUT") return;
       switch (e.key) {
-        case "ArrowUp": case "]": e.preventDefault(); stepZ(+1); break;
-        case "ArrowDown": case "[": e.preventDefault(); stepZ(-1); break;
+        case "ArrowUp": case "]": e.preventDefault(); stepZ(+1); break;     // section up (Z)
+        case "ArrowDown": case "[": e.preventDefault(); stepZ(-1); break;   // section down (Z)
+        case "ArrowLeft": e.preventDefault(); prevTile(); break;            // previous tile
+        case "ArrowRight": e.preventDefault(); nextTile(); break;           // next tile
         case "+": case "=": zoomCentre(1.3); break;
         case "-": case "_": zoomCentre(1 / 1.3); break;
         case "0": snapBack(); break;
