@@ -35,10 +35,14 @@
     return (await r.json()).map(x => x.tile_id);
   }
 
-  // Cumulative stats for one user (to restore the session panel on login).
+  // Cumulative stats for one user (to restore/refresh the session panel). Reads the
+  // leaderboard view, which counts the LATEST submission per tile (no re-submit double-count).
   async function getUserStats(username) {
-    const lb = await getLeaderboard(9999);
-    return lb.find(u => u.username === username) || null;
+    if (!ONLINE) { const lb = await getLeaderboard(9999); return lb.find(u => u.username === username) || null; }
+    const q = "?username=eq." + encodeURIComponent(username) + "&select=*";
+    const r = await fetch(URL + "/rest/v1/leaderboard" + q, { headers: headers() });
+    if (!r.ok) return null;
+    return (await r.json())[0] || null;
   }
 
   // Per-tile annotations from ALL users (latest per user) — for the agreement score

@@ -59,14 +59,10 @@
     order = TILES.map(t => t.tile_id);
     idx = order.findIndex(id => !doneSet.has(id));
     if (idx < 0) idx = order.length;             // everything done
-    // Restore cumulative stats (vesicles + time), not just the tile count.
+    // Stats come from the server (latest submission per tile), so re-submits update
+    // a tile's contribution instead of adding to it.
     session = { tiles: doneSet.size, vesicles: 0, secs: 0 };
-    try {
-      const s = await window.AM_DB.getUserStats(name);
-      if (s) { session.tiles = s.tiles_completed ?? doneSet.size;
-               session.vesicles = s.vesicles_found ?? 0;
-               session.secs = Math.round((s.hours_annotated ?? 0) * 3600); }
-    } catch (_) {}
+    await refreshSessionStats();
     $("who").textContent = name;
     $("login").classList.add("hidden"); $("app").classList.remove("hidden");
     refreshLeaderboard(); updateStats();
@@ -342,15 +338,23 @@
     }
     clearSaveError();
     $("submit-btn").disabled = false;
-    const firstTime = !doneSet.has(tile.tile_id);
     doneSet.add(tile.tile_id);
-    if (firstTime) session.tiles += 1;
-    session.vesicles += row.n_points; session.secs += row.duration_s;
-    updateStats(); refreshLeaderboard();
+    refreshLeaderboard();
+    await refreshSessionStats();                  // re-read server totals (re-submit updates, never adds)
     await enterReview(pts);                       // reveal: agreement score + others' marks
   }
 
   function submitOrNext() { if (reviewing) nextTile(); else submit(false); }
+
+  async function refreshSessionStats() {
+    try {
+      const s = await window.AM_DB.getUserStats(username);
+      session = { tiles: s?.tiles_completed ?? doneSet.size,
+                  vesicles: s?.vesicles_found ?? 0,
+                  secs: Math.round((s?.hours_annotated ?? 0) * 3600) };
+    } catch (_) {}
+    updateStats();
+  }
 
   // ── agreement (mean pairwise F1 vs other annotators on the same tile) ──
   function matchF1(A, B, r) {
